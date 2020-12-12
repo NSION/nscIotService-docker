@@ -21,7 +21,7 @@ Assign a task from C2 system and transfer all your data to this
 task. 
 
 All transmitted data is encrypted end-to-end using AES 256
-and TLS 1.2.
+and TLS 1.2 or TLS1.3.
 
 https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf
 
