@@ -25,25 +25,15 @@ and TLS 1.2 or TLS1.3.
 
 https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf
 
-Docker image:
-
-Main service components to run NSC Iotservices on docker env.
+Required platform services to run NSC Iotservices:
 - JavaJDK
 - Apache Tomcat
 - ffmpeg + required dependency libraries for docker image
 - In case of linux, video-for-linux services v4l2-utils
 
-Runtime requirements for NSCIotservices
-- local video device sharing host os to docker
-- file sharing mounts between host OS and docker
-
-Other non-functional requirements
-- As small as possible size of the Docker image 
-- Well maintained open source repositories (directly from community) 
-
 Container image:
 - Docker images is based on Debian-slim repositories.
-- JavaJDK
+- OpenJDK
 - FFMPEG & dependency libraries for docker image
 - Video-for-linux services v4l2-util
 - Apache Tomcat
