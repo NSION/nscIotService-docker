@@ -1,6 +1,5 @@
 FROM alpine:latest
-LABEL MAINTAINER Jukka Raivio <jukka@nsion.fi>
- 
+
 ENV PATH=/usr/bin/ffmpeg:$PATH
  
 RUN apk add --update \
