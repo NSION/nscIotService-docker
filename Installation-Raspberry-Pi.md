@@ -27,9 +27,6 @@ Open a terminal window and run the command:
 ```text 
 sudo apt-get update && sudo apt-get upgrade
 ```
-```text 
-ln -s /mnt/c/Users/<user>/hackstack $HOME
-```
 
 ## Step 2: Download the Convenience Script and Install Docker on Raspberry Pi
 
