@@ -37,3 +37,4 @@ https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf
 
 ## nscIotService Docker architecture:
 ![nscIotService Docker architecture](https://github.com/NSION/nscIotService---docker/blob/main/pictures/nscIotService-docker.png)
+Above architecture diagram describes container interfaces to serve 4 dedicated data sources. 
