@@ -35,4 +35,5 @@ https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf
 - Apache Tomcat
 - NSCIotClient war package
 
-https://github.com/NSION/nscIotService---docker/blob/main/pictures/nscIotService-docker.png?raw=true
+## nscIotService Docker architecture:
+![nscIotService Docker architecture](https://github.com/NSION/nscIotService---docker/blob/main/pictures/nscIotService-docker.png)
