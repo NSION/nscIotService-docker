@@ -23,11 +23,12 @@ To install Docker on your Raspberry Pi, you need to go through the following ste
 ## Step 1: Update and Upgrade
 Start by updating and upgrading the system. This ensures you install the latest version of the software.
 Open a terminal window and run the command:
-
-$`sudo apt-get update && sudo apt-get upgrade`
-
-$`ln -s /mnt/c/Users/<user>/hackstack $HOME`
-
+```text 
+sudo apt-get update && sudo apt-get upgrade
+```
+```text 
+ln -s /mnt/c/Users/<user>/hackstack $HOME
+```
 $`sudo apt install x11-xserver-utils`
 
 ## Step 2: Download the Convenience Script and Install Docker on Raspberry Pi
