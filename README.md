@@ -23,19 +23,13 @@ task.
 All transmitted data is encrypted end-to-end using AES 256
 and TLS 1.2 or TLS1.3.
 
-
-
 https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf
 
-Required platform services to run NSC Iotservices:
-- JavaJDK
-- Apache Tomcat
-- ffmpeg + required dependency libraries for docker image
-- In case of linux, video-for-linux services v4l2-utils
 
-Container image:
+
+Components for nscIotService container:
 - Docker images is based on Debian-slim repositories.
-- OpenJDK
+- OpenJDK 11
 - FFMPEG & dependency libraries for docker image
 - Video-for-linux services v4l2-util
 - Apache Tomcat
