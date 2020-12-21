@@ -31,19 +31,19 @@ $`sudo apt install x11-xserver-utils´
 ## Step 2: Download the Convenience Script and Install Docker on Raspberry Pi
 
 Move on to downloading the installation script with:
-$`curl -fsSL https://get.docker.com -o get-docker.sh
+$`curl -fsSL https://get.docker.com -o get-docker.sh´
 
 Execute the script using the command:
-$`sudo curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
+$`sudo curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh´
 
 ## Step 3: Add a Non-Root User to the Docker Group
 
 By default, only users who have administrative privileges (root users) can run containers. If you are not logged in as the root, one option is to use the sudo prefix. However, you could also add your non-root user to the Docker group which will allow it to execute docker commands.
 The syntax for adding users to the Docker group is:
-$`sudo usermod -aG docker $USER
+$`sudo usermod -aG docker $USER´
 
 To add the Pi user (the default user in Raspbian), use the command:
-$`sudo usermod -aG docker pi
+$`sudo usermod -aG docker pi´
 
 There is no specific output if the process is successful. 
 For the changes to take place, you need to restart Pi
