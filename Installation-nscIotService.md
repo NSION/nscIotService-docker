@@ -2,7 +2,7 @@
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
 
 ## Setup enviroment:
-- Login to Rasp Pi as pi user. 
+- Login to server. 
 - Open terminal to home folder
 ### Step 1: Clone git project 
 ```text 
