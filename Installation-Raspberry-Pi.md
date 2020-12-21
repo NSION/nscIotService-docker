@@ -1,28 +1,29 @@
-Raspberry Pi - Docker:
+# Raspberry Pi - Docker:
 Docker is a tool for creating, deploying, and running applications in containers. 
 The software is popular among developers as it speeds up the development process and does not use a lot of resources.
 Docker containers are lightweight, especially compared to virtual machines. This feature is especially valuable if you are a Raspberry Pi user.
-Prerequisites:
-Raspberry Pi 4 / 4GB RAM
-Raspberry Pi with a running Rasbian OS (Debian based OS)
-Instructions to setup Raspberry SD card
-SSH connection enabled 
-Instruction to enable remote ssh connection
-While installation phase you need to have connection to services located on internet
+## Prerequisites:
+- Raspberry Pi 4 / 4GB RAM
+- Raspberry Pi with a running Rasbian OS (Debian based OS)
+## Instructions to setup Raspberry SD card
+- SSH connection enabled 
+- Instruction to enable remote ssh connection
+- While installation phase you need to have connection to services located on internet
 
-Installation:
-Install Docker on Raspberry Pi:
+# Installation:
+## Install Docker on Raspberry Pi:
 To install Docker on your Raspberry Pi, you need to go through the following steps:
-Update and upgrade your system.
-Download the installation script and install the package.
-Allow a non-root user to execute Docker commands.
-Verify installation by checking the Docker version.
-Test the set up by running a “hello-world” container.
-Install Docker additional features
-Step 1: Update and Upgrade
+- Update and upgrade your system.
+- Download the installation script and install the package.
+- Allow a non-root user to execute Docker commands.
+- Verify installation by checking the Docker version.
+- Test the set up by running a “hello-world” container.
+- Install Docker additional features
+
+## Step 1: Update and Upgrade
 Start by updating and upgrading the system. This ensures you install the latest version of the software.
 Open a terminal window and run the command:
-# sudo apt-get update && sudo apt-get upgrade
+'sudo apt-get update && sudo apt-get upgrade'
 Step 2: Download the Convenience Script and Install Docker on Raspberry Pi
 
 Move on to downloading the installation script with:
