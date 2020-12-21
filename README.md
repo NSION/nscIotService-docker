@@ -1,5 +1,6 @@
 # nscIotService-docker
 
+![nsc3Overview](https://github.com/NSION/nscIotService---docker/blob/main/pictures/NSC3Overwiev.jpg)
 
 NSC-IoT™ client connects multiple camera sources (usb, network
 (IP), digital/analog) into the NSC3 platform. The IoT client may be
