@@ -27,12 +27,10 @@ https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf
 
 
 
-Components for nscIotService container:
+## Components for nscIotService container:
 - Docker images is based on Debian-slim repositories.
 - OpenJDK 11
 - FFMPEG & dependency libraries for docker image
 - Video-for-linux services v4l2-util
 - Apache Tomcat
 - NSCIotClient war package
-
-
