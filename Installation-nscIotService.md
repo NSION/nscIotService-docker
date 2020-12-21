@@ -13,15 +13,9 @@ git clone https://github.com/NSION/nscIotService-docker.git
 ```text 
 cd ~
 mkdir ./nscIotService-docker/logs
-mkdir ./nscIotService/iotkey
+mkdir ./nscIotService-docker/iotkey
 ```
 ### Step 3:  Copy Nsc IoT key
-- Download the corresponding Nsc IoT key from the NSC3 organisation as admin user
-- Copy the key file to the folder ./nscIotService/iotkey
+- Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
+- Copy the key file to the folder ./nscIotService-docker/iotkey
 
-### Step 4:  Copy nscIotService.war package to the Rasp Pi
-Copy nscIotService.war file the folder ./nscIotService/nscwars
-
-### Step 5:  Copy docker configuration files to the Rasp Pi
-- Copy Dockerfile to the folder ./nscIotService
-- Copy docker-compose.yml file to the folder ./nscIotService
