@@ -24,9 +24,9 @@ task.
 All transmitted data is encrypted end-to-end using AES 256
 and TLS 1.2 or TLS1.3.
 
--[NSC3 product description:](https://www.nsiontec.com/platform/)
--[NSC3 IOT product description:](https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf)
--[NSION Ltd Sales](https://www.nsiontec.com/company/contact/)
+- [NSC3 product description:](https://www.nsiontec.com/platform/)
+- [NSC3 IOT product description:](https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf)
+- [NSION Ltd Sales](https://www.nsiontec.com/company/contact/)
 
 ## Components for nscIotService container:
 - Docker images is based on Debian-slim repositories.
