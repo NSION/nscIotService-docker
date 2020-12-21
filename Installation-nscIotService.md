@@ -4,16 +4,16 @@ Following instructions are providing instructions to build the docker image loca
 ## Setup enviroment:
 
 Login to Rasp Pi as pi user. Open terminal to home folder
-### Step 1:  Create nscIotService specific folder
+### Step 1: Clone git project 
+```text 
+git clone https://github.com/NSION/nscIotService-docker.git
+```
+### Step 2:  Create nscIotService specific folder
 ```text 
 cd ~
 mkdir ./nscIotService-docker/logs
 mkdir ./nscIotService/nscIotConfig
 mkdir ./nscIotService/iotkey
-```
-### Step 2: Clone git project 
-```text 
-git clone https://github.com/NSION/nscIotService-docker.git
 ```
 ### Step 3:  Copy Nsc IoT key
 - Download the corresponding Nsc IoT key from the NSC3 organisation as admin user
