@@ -30,9 +30,6 @@ sudo apt-get update && sudo apt-get upgrade
 ```text 
 ln -s /mnt/c/Users/<user>/hackstack $HOME
 ```
-```text 
-sudo apt install x11-xserver-utils`
-``` 
 
 ## Step 2: Download the Convenience Script and Install Docker on Raspberry Pi
 
