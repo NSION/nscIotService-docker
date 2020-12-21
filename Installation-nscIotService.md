@@ -6,6 +6,7 @@ Following instructions are providing instructions to build the docker image loca
 Login to Rasp Pi as pi user. Open terminal to home folder
 ### Step 1: Clone git project 
 ```text 
+cd ~
 git clone https://github.com/NSION/nscIotService-docker.git
 ```
 ### Step 2:  Create nscIotService specific folder
