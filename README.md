@@ -34,3 +34,5 @@ https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf
 - Video-for-linux services v4l2-util
 - Apache Tomcat
 - NSCIotClient war package
+
+https://github.com/NSION/nscIotService---docker/blob/main/pictures/nscIotService-docker.png?raw=true
