@@ -14,7 +14,7 @@ Prerequisites for installation:
 
 Installation instructions:
 - [Installation of nscIotService:](https://github.com/NSION/nscIotService-docker/blob/main/Installation-nscIotService.md)
-- [Install Docker for Raspberry Pi](https://www.nsiontec.com/platform/)
+- [Docker installation for Raspberry Pi](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
 
 
 ## NSC3 Overview
