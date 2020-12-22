@@ -4,7 +4,7 @@
 
 ## NSC3 Overview
 
-![nsc3Overview](https://github.com/NSION/nscIotService---docker/blob/main/pictures/NSC3Overwiev.jpg)
+![nsc3Overview](https://www.nsiontec.com/wp-content/uploads/2020/08/NSC3Overwiev-scaled-1-768x543.jpg)
 
 NSC-IoT™ client connects multiple camera sources (usb, network
 (IP), digital/analog) into the NSC3 platform. The IoT client may be
