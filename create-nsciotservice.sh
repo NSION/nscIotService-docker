@@ -1,10 +1,14 @@
 #!/bin/bash
-export container-nr="1"
-export ip-number="172.21.0.2"
-export uuid="39acc406-2393-78f7-0e59-b383c096c265"
-export iot-key="test.iot"
+# Attach iot-key file name
+for keyfile in `ls ./iotkey`; do
+export iotkey=$keyfile
+done
+#if keyfile=NULL then echo "Iot key is missing!"; exit
+export contid="1"
+export ipnumber="172.21.0.2"
+export uuid=$(uuidgen)
 rm -f docker-compose.yml temp.yml     
-( echo "cat <<EOF >docker-campose.yml";
+( echo "cat <<EOF >docker-compose.yml";
   cat docker-compose-template.yml;
   echo "EOF";
 ) >temp.yml

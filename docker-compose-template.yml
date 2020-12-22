@@ -1,19 +1,19 @@
-    nsciot${container-nr}:
+    nsciot${contid}:
       restart: unless-stopped
       environment:
         - SYSTEM_UUID_KEY=${uuid}
-      container_name: nsciotservice${container-nr}
+      container_name: nsciotservice${contid}
       image: nsion/nsciotservice-debian-slim:latest
       volumes:
-        - ./nscIotConfig/iotservice.properties${container-nr}:/opt/tomcat/iotservice.properties
-        - ./iotkey/${iot-key}:/opt/tomcat/webapps/${iot-key}
+        - ./nscIotConfig/iotservice.properties${contid}:/opt/tomcat/iotservice.properties
+        - ./iotkey/${iotkey}:/opt/tomcat/webapps/${iotkey}
         - ./nscwars/nscIotService.war:/opt/tomcat/webapps/nscIotService.war
         - ./logs/nsciotservice1:/opt/tomcat/logs
       networks:
         nsciot-network:
-         ipv4_address: ${ip-number}
+         ipv4_address: ${ipnumber}
       ports:
-        - 809${container-nr}:8080
+        - 809${contid}:8080
       # Example for device video sources, like usb cam
       #devices:
       #  - "/dev/video0:/dev/video0"   
