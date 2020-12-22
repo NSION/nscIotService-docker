@@ -4,7 +4,11 @@
 
 ## NSC3 Overview
 
+NSC3™ is a  Realtime Resource Management for Intelligence Based Decision Making to Democratize your C2. Stream and store secured live video and data to other operators in the field and to  Control rooms.   View video and data from drones,  mobile phones,  body cams, dashboard cams and surveillance cameras on your mobile phone in the field or on control room screens. Select the most relevant data source and always see real time data.   
+
 ![nsc3Overview](https://www.nsiontec.com/wp-content/uploads/2020/08/NSC3Overwiev-scaled-1-768x543.jpg)
+
+### NSC3 IoT Client
 
 NSC-IoT™ client connects multiple camera sources (usb, network
 (IP), digital/analog) into the NSC3 platform. The IoT client may be
@@ -33,7 +37,7 @@ More information about NSC3 platforms:
 - [NSC3 IOT product description](https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf)
 - [NSION Ltd - Contact information](https://www.nsiontec.com/company/contact/)
 
-## Components for nscIotService container:
+### Components for nscIotService container:
 - Docker images is based on Debian-slim repositories.
 - OpenJDK 11
 - FFMPEG & dependency libraries for docker image
@@ -41,6 +45,6 @@ More information about NSC3 platforms:
 - Apache Tomcat
 - NSCIotClient war package
 
-## nscIotService Docker architecture:
+### nscIotService Docker architecture:
 ![nscIotService Docker architecture](https://github.com/NSION/nscIotService---docker/blob/main/pictures/nscIotService-docker.png)
 Above architecture diagram describes container interfaces to serve 4 dedicated data sources. 
