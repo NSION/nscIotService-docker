@@ -1,6 +1,6 @@
 # nscIotService-docker
 
-This is a microservice based deployment SW repository for NSC3 IoT client by NSION technologies Ltd.
+This is a microservice based SW deployment specific repository for NSC3 IoT client developed by NSION technologies Ltd.
 - Instructions and scripts to setup container based nscIotService to run on edge node.
 - Support for serveral RTMP based IP camera source.
 - Instructions are based on Docker runtime environment. Dedicated instruction to configure Docker on top of Raspberry Pi 4 HW
