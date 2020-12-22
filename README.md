@@ -1,10 +1,25 @@
 # nscIotService-docker
 
+This is a microservice based deployment SW repository for NSC3 IoT client by NSION technologies Ltd.
+- Instructions and scripts to setup container based nscIotService to run on edge node.
+- Support for serveral RTMP based IP camera source.
+- Instructions are based on Linux (Ubuntu) / Docker runtime enviroment. Dedicated instruction to configure Docker on top of Raspberry Pi 4 HW
+
+Prerequisites for installation:
+- At least 4Cores / 4GB RAM on edge computer
+- Docker and docker-compose installed
+- Account for NSC3 services
+- NSC3 iot-key
+- Recommended OS: Ubuntu 18.04 LTS or later
+
+Installation instructions:
+- [Install Docker for Raspberry Pi](https://www.nsiontec.com/platform/)
+- [Install Docker for Raspberry Pi](https://www.nsiontec.com/platform/)
 
 
 ## NSC3 Overview
 
-NSC3™ is a  Realtime Resource Management for Intelligence Based Decision Making to Democratize your C2. Stream and store secured live video and data to other operators in the field and to  Control rooms.   View video and data from drones,  mobile phones,  body cams, dashboard cams and surveillance cameras on your mobile phone in the field or on control room screens. Select the most relevant data source and always see real time data.   
+NSC3™ is a  Realtime Resource Management for Intelligence Based Decision Making to Democratize your C2. Stream and store secured live video and data to other operators in the field and to  Control rooms. View video and data from drones, mobile phones, body cams, dashboard cams and surveillance cameras on your mobile phone in the field or on control room screens. Select the most relevant data source and always see real time data.   
 
 ![nsc3Overview](https://www.nsiontec.com/wp-content/uploads/2020/08/NSC3Overwiev-scaled-1-768x543.jpg)
 
