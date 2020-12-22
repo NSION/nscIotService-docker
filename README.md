@@ -13,7 +13,7 @@ Prerequisites for installation:
 - Recommended OS: Ubuntu 18.04 LTS or later.
 
 Installation instructions:
-- [Install Docker for Raspberry Pi](https://www.nsiontec.com/platform/)
+- [Installation of nscIotService:](https://github.com/NSION/nscIotService-docker/blob/main/Installation-nscIotService.md)
 - [Install Docker for Raspberry Pi](https://www.nsiontec.com/platform/)
 
 
