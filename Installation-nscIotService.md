@@ -78,3 +78,9 @@ as example output
 IOT_SERVICE_LIVE_AUTOSTART_NAME_KEY=true
 IOT_SERVICE_LIVE_NETWORK_INPUTSOURCE_NAME_KEY=rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 ```
+## Start NSCiotServices:
+
+```text 
+sudo docker-compose up -d
+```
+Note that at the first start
