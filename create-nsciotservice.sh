@@ -1,6 +1,8 @@
 #!/bin/bash
 # Move old files
 mv docker-compose.yml docker-compose.old
+# Remove old rtsp configuration files
+rm ./nscIotConfig/*
 # Attach iot-key file name
 for keyfile in `ls ./iotkey`; do
 export iotkey=$keyfile
@@ -38,3 +40,8 @@ do
 done
 cat docker-compose-header.yml docker-compose-containers.yml docker-compose-footer.yml > docker-compose.yml
 rm -f docker-compose-containers.yml
+echo "New configuration is created for NSC Iot Client!"
+echo "Number of video streams: $contid"
+echo ""
+echo "Start nscIotService by command:"
+echo "sudo docker-compose up -d"
