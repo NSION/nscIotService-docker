@@ -96,7 +96,7 @@ Note that at the first start will pull docker image from dockerhub to local dock
 - Login to your NSC3 organisation
 - Select default task
 - Recently created video devices shall be visible like below example
-![WebUI](
+![WebUI](https://github.com/NSION/nscIotService-docker/blob/main/pictures/NSC3Web-sample.png)
 
 ## Maintenence of NSCIotService:
 #### Shutdown nscIotService
