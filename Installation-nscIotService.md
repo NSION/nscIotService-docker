@@ -11,7 +11,7 @@ Following instructions are providing instructions to build the docker image loca
 #### - Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
 + Login to NSC3 Web UI admin panel as admin or key user
 + Select the targeted organization and click "arrow down" icon
-![iotkey](https://github.com/NSION/nscIotService-docker/blob/main/pictures/how-to-iotkey.png)
+![iotkey](https://github.com/NSION/nscIotService-docker/blob/main/pictures/how-to-iotkey.png =250x250)
 
 #### - url addresses for each of the RTSP camera sources are available
 
