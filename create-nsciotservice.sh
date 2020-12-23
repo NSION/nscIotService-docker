@@ -40,8 +40,10 @@ do
 done
 cat docker-compose-header.yml docker-compose-containers.yml docker-compose-footer.yml > docker-compose.yml
 rm -f docker-compose-containers.yml
+echo "++++++++++++++++++++++++++++++++++++++++++++++++"
 echo "New configuration is created for NSC Iot Client!"
 echo "Number of video streams: $contid"
 echo ""
 echo "Start nscIotService by command:"
 echo "sudo docker-compose up -d"
+echo "++++++++++++++++++++++++++++++++++++++++++++++++"
