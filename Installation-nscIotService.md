@@ -2,7 +2,10 @@
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
 ## Prerequisites for installation
 - Docker with docker-compose installed
-Ohjeita
+-- (https://docs.docker.com/docker-for-windows/install-windows-home/)
+-- (https://docs.docker.com/docker-for-mac/install/)
+-- (https://docs.docker.com/engine/install/ubuntu/)
+-- (https://docs.docker.com/compose/install/)
 - Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
 Ohjeet tänne.
 - url addresses for each of the RTSP camera sources are available
