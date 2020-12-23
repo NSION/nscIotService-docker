@@ -91,3 +91,33 @@ cd ~/nscIotService-docker
 sudo docker-compose up -d
 ```
 Note that at the first start will pull docker image from dockerhub to local docker registry.
+
+## Check the video stream from NSC3 WebUI:
+- Login to your NSC3 organisation
+- Select default task
+- Recently created video devices shall be visible like below example
+
+
+## Maintenence of NSCIotService:
+#### Shutdown nscIotService
+```text
+cd ~/nscIotService-docker
+sudo docker-compose down
+```
+#### Upgrade nscIotService:
+```text
+cd ~/nscIotService-docker
+sudo docker-compose down
+sudo docker-compose pull
+sudo docker-compose up -d
+```
+#### Change rtsp video sources:
+It is recommened to do changes for existing setup by modifying directly corresponding configuration file insted of running installation process once again.
+Change one of the video source configuration files on folder ./nscIotConfig
+```text
+cd ~/nscIotService-docker
+sudo docker-compose restart
+```
+
+
+
