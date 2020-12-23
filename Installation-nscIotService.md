@@ -25,7 +25,7 @@ mkdir ./nscIotService-docker/iotkey
 ### Step 3:  Copy Nsc IoT key
 - Copy the key file to the folder ./nscIotService-docker/iotkey/
 
-### Setup your configuration
+### Step 4:  Setup your configuration
 
 ```text 
 cd ~
@@ -46,4 +46,34 @@ rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 ```text 
 RTSP url address for video stream number 2:
 rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+```
+
+### Step 4:  Verify installation
+
+Check that configuration files are created accordingly.
+
+#### docker-compose.yml
+
+```text 
+more docker-compose.yml
+```
+- Check that file looks as proper docker-compose yaml file
+- 1 Container per stream is created. Check that number of containers are matching with your setup
+
+#### Video inbound configuration
+
+```text 
+ls ./nscIotConfig
+```
+Check that 
+- each of the streams do have own dedicated configuration file.
+- rtsp URL is created accordingly 
+e.g 
+
+```text 
+more ./nscIotConfig/iotservice.properties1
+```
+as example output
+```text 
+more ./nscIotConfig/iotservice.properties1
 ```
