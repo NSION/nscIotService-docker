@@ -32,7 +32,8 @@ cd ~
 ./create-nsciotservice.sh
 ```
 Define number of video streams, 5 is recommended max number. 
-As an example value is 2. Both streams are using the same demo rtsp stream source
+Below as an example the stream source value is set 2. 
+Both streams are using the same demo rtsp stream source
 
 ```text 
 Number of video streams (^C to interrupt):
@@ -83,4 +84,4 @@ IOT_SERVICE_LIVE_NETWORK_INPUTSOURCE_NAME_KEY=rtsp://wowzaec2demo.streamlock.net
 ```text 
 sudo docker-compose up -d
 ```
-Note that at the first start
+Note that at the first start will pull docker image from dockerhub to local docker registry.
