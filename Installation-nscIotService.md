@@ -1,9 +1,16 @@
 # Install nscIotService
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
+## Prerequisites for installation
+- Docker with docker-compose installed
+Ohjeita
+- Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
+Ohjeet tänne.
+- url addresses for each of the RTSP camera sources are available
 
 ## Setup enviroment:
 - Login to server. 
 - Open terminal to home folder
+
 ### Step 1: Clone git project 
 ```text 
 cd ~
@@ -16,6 +23,19 @@ mkdir ./nscIotService-docker/logs
 mkdir ./nscIotService-docker/iotkey
 ```
 ### Step 3:  Copy Nsc IoT key
-- Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
-- Copy the key file to the folder ./nscIotService-docker/iotkey
+- Copy the key file to the folder ./nscIotService-docker/iotkey/
+
+### Setup your configuration
+
+```text 
+cd ~
+./create-nsciotservice.sh
+```
+Define number of video streams, 5 is recommended max number. 
+As an example value is 2
+```text 
+Number of video streams (^C to interrupt):
+2
+```
+Assign url address for the stream number 1.
 
