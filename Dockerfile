@@ -1,4 +1,4 @@
-FROM delian:stable-slim
+FROM debian:stable-slim
 # Install v4l-utils & apt-utils
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get -yq update && \
