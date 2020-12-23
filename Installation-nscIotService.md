@@ -9,7 +9,9 @@ Following instructions are providing instructions to build the docker image loca
 + [Raspberry Pi4](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
 
 #### - Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
-++ Ohjeet tänne.
++ Login to NSC3 Web UI admin panel as admin or key user
++ Select the targeted organization and click "arrow down" icon
+![iotkey](https://github.com/NSION/nscIotService-docker/blob/main/pictures/how-to-iotkey.png)
 
 #### - url addresses for each of the RTSP camera sources are available
 
