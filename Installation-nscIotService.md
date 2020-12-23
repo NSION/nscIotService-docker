@@ -2,14 +2,14 @@
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
 ## Prerequisites for installation
 + Docker with docker-compose is installed. Below list of instructions for several OS
-- [Windows](https://docs.docker.com/docker-for-windows/install-windows-home/)
-- [MAC](https://docs.docker.com/docker-for-mac/install/)
-- [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-- [docker-compose](https://docs.docker.com/compose/install/)
-- [Raspberry Pi4](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
+++ [Windows](https://docs.docker.com/docker-for-windows/install-windows-home/)
+++ [MAC](https://docs.docker.com/docker-for-mac/install/)
+++ [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+++ [docker-compose](https://docs.docker.com/compose/install/)
+++ [Raspberry Pi4](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
 
 + Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
-- Ohjeet tänne.
+++ Ohjeet tänne.
 
 + url addresses for each of the RTSP camera sources are available
 
