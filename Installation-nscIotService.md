@@ -28,7 +28,7 @@ mkdir ./nscIotService-docker/iotkey
 ### Step 4:  Setup your configuration
 
 ```text 
-cd ~
+cd ~/nscIotService-docker
 ./create-nsciotservice.sh
 ```
 Define number of video streams, 5 is recommended max number. 
@@ -39,7 +39,6 @@ Both streams are using the same demo rtsp stream source
 Number of video streams (^C to interrupt):
 2
 ```
-
 ```text 
 RTSP url address for video stream number 1:
 rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
@@ -81,7 +80,8 @@ IOT_SERVICE_LIVE_NETWORK_INPUTSOURCE_NAME_KEY=rtsp://wowzaec2demo.streamlock.net
 ```
 ## Start NSCiotServices:
 
-```text 
+```text
+cd ~/nscIotService-docker
 sudo docker-compose up -d
 ```
 Note that at the first start will pull docker image from dockerhub to local docker registry.
