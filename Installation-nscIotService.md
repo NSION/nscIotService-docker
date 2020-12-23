@@ -32,10 +32,18 @@ cd ~
 ./create-nsciotservice.sh
 ```
 Define number of video streams, 5 is recommended max number. 
-As an example value is 2
+As an example value is 2. Both streams are using the same demo rtsp stream source
+
 ```text 
 Number of video streams (^C to interrupt):
 2
 ```
-Assign url address for the stream number 1.
 
+```text 
+RTSP url address for video stream number 1:
+rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+```
+```text 
+RTSP url address for video stream number 2:
+rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+```
