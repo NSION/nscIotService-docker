@@ -80,6 +80,12 @@ Docker Compose:
 ```text 
 sudo apt-get install docker-compose
 ```
+## Step 7: Clone nscIotService package from github 
+
+
+
+## Step 8: Compile docker image on Raspberry Pi device and push it to local Docker registry
+
 
 ## Your Raspberry Pi environment is ready for NSC Iot Client installation
 - [Install NSC Iot Client:](https://github.com/NSION/nscIotService---docker/blob/main/Installation-nscIotService.md)
