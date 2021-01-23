@@ -7,7 +7,7 @@ This is a microservice based SW deployment specific repository for a NSC3 IoT cl
 Instructions for several Docker runtime environment 
 - Windows OS with Docker
 - MacOS with Docker
-- Linux 
+- Linux with Docker
 - Raspberry Pi 4 (Dedicated instruction to configure Docker on top of Raspberry Pi 4)
 
 Prerequisites for installation:
