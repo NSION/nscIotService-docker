@@ -8,7 +8,7 @@ for keyfile in `ls ./iotkey`; do
 export iotkey=$keyfile
 done
 echo "**********************************************************"
-echo "NSC Iot client setup configurator:
+echo "NSC Iot client setup configurator:"
 echo ""
 echo "Select HW configuration"
 echo "1. Intel based - amd64"
