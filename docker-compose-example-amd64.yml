@@ -9,7 +9,6 @@ services:
       volumes:
         - ./nscIotConfig/iotservice.properties1:/opt/tomcat/iotservice.properties
         - ./iotkey/<nsc3 organisation>.nsc.iot:/opt/tomcat/webapps/<nsc3 organisation>.nsc.iot
-        - ./nscwars/nscIotService.war:/opt/tomcat/webapps/nscIotService.war
         - ./logs/nsciotservice1:/opt/tomcat/logs
       networks:
         nsciot-network:
@@ -28,7 +27,6 @@ services:
       volumes:
         - ./nscIotConfig/iotservice.properties2:/opt/tomcat/iotservice.properties
         - ./iotkey/<nsc3 organisation>.iot:/opt/tomcat/webapps/<nsc3 organisation>.nsc.iot
-        - ./nscwars/nscIotService.war:/opt/tomcat/webapps/nscIotService.war
         - ./logs/nsciotservice2:/opt/tomcat/logs
       networks:
         nsciot-network:
@@ -47,7 +45,6 @@ services:
       volumes:
         - ./nscIotConfig/iotservice.properties3:/opt/tomcat/iotservice.properties
         - ./iotkey/<nsc3 organisation>.nsc.iot:/opt/tomcat/webapps/<nsc3 organisation>.nsc.iot
-        - ./nscwars/nscIotService.war:/opt/tomcat/webapps/nscIotService.war
         - ./logs/nsciotservice3:/opt/tomcat/logs
       networks:
         nsciot-network:
@@ -66,7 +63,6 @@ services:
       volumes:
         - ./nscIotConfig/iotservice.properties4:/opt/tomcat/iotservice.properties
         - ./iotkey/<nsc3 organisation>.nsc.iot:/opt/tomcat/webapps/<nsc3 organisation>.nsc.iot
-        - ./nscwars/nscIotService.war:/opt/tomcat/webapps/nscIotService.war
         - ./logs/nsciotservice4:/opt/tomcat/logs
       networks:
         nsciot-network:
