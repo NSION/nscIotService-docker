@@ -39,9 +39,10 @@ mkdir ./nscIotService-docker/iotkey
 cd ~/nscIotService-docker
 ./create-nsciotservice.sh
 ```
-Define number of video streams, 5 is recommended max number. 
-Below as an example the stream source value is set 2. 
-Both streams are using the same demo rtsp stream source
+Define hardware configuration. 
+- Most typical hw configuration is amd64 by covering Windows, Mac and most of the Linux servers
+- Raspberry pi 4 or Jetson boards are using arm32 based HW
+- New Raspberry pi 4 8GB boards or new MAC laptops are using arm64 based HW
 ```text 
 **********************************************************
 NSC Iot client setup configurator:
@@ -52,6 +53,9 @@ Select HW configuration
 3. Raspberry pi 4 8GB - arm64
 1
 ```
+Define number of video streams, 5 is recommended max number. 
+Below example set the value 2. 
+Both streams are using the same demo rtsp stream source
 ```text 
 Number of video streams (^C to interrupt):
 2
