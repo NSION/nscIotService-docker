@@ -4,7 +4,7 @@ This is a microservice based SW deployment specific repository for a NSC3 IoT cl
 - Instructions and scripts to setup container based nscIotService on edge computer node. Support for serveral RTSP based IP camera sources.
 - Containers registry is located on [Dockerhub](https://hub.docker.com/repository/docker/nsiontech/nsciotservice) 
 
-Instructions for several Docker runtime environment 
+Instructions for several Docker runtime environments
 - Windows OS with Docker
 - MacOS with Docker
 - Linux with Docker
@@ -12,8 +12,8 @@ Instructions for several Docker runtime environment
 
 Prerequisites for installation:
 - At least 4Cores / 4GB RAM on edge computer
-- Docker and docker-compose installed
-- Account for NSC3 services
+- Docker and docker-compose are installed
+- Existing account for NSC3 services
 - NSC3 specific iot-key for backend authentication
 - Recommended OS: Ubuntu 18.04 LTS or later.
 
