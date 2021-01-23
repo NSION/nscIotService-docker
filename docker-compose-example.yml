@@ -5,7 +5,7 @@ services:
       environment:
         - SYSTEM_UUID_KEY=<uuid>
       container_name: nsciotservice1
-      image: nsion/nsciotservice:latest
+      image: nsiontech/nsciotservice:amd64
       volumes:
         - ./nscIotConfig/iotservice.properties1:/opt/tomcat/iotservice.properties
         - ./iotkey/<nsc3 organisation>.nsc.iot:/opt/tomcat/webapps/<nsc3 organisation>.nsc.iot
@@ -24,7 +24,7 @@ services:
       environment:
         - SYSTEM_UUID_KEY=<uuid>
       container_name: nsciotservice2
-      image: nsion/nsciotservice:latest
+      image: nsiontech/nsciotservice:amd64
       volumes:
         - ./nscIotConfig/iotservice.properties2:/opt/tomcat/iotservice.properties
         - ./iotkey/<nsc3 organisation>.iot:/opt/tomcat/webapps/<nsc3 organisation>.nsc.iot
@@ -43,7 +43,7 @@ services:
       environment:
         - SYSTEM_UUID_KEY=<uuid>
       container_name: nsciotservice3
-      image: nsion/nsciotservice:latest
+      image: nsiontech/nsciotservice:amd64
       volumes:
         - ./nscIotConfig/iotservice.properties3:/opt/tomcat/iotservice.properties
         - ./iotkey/<nsc3 organisation>.nsc.iot:/opt/tomcat/webapps/<nsc3 organisation>.nsc.iot
@@ -62,7 +62,7 @@ services:
       environment:
         - SYSTEM_UUID_KEY=<uuid>
       container_name: nsciotservice4
-      image: nsion/nsciotservice:latest
+      image: nsiontech/nsciotservice:amd64
       volumes:
         - ./nscIotConfig/iotservice.properties4:/opt/tomcat/iotservice.properties
         - ./iotkey/<nsc3 organisation>.nsc.iot:/opt/tomcat/webapps/<nsc3 organisation>.nsc.iot
