@@ -69,7 +69,7 @@ cat docker-compose-header.yml docker-compose-containers.yml docker-compose-foote
 rm -f docker-compose-containers.yml
 echo "**********************************************************"
 echo "New $hw based configuration is created for NSC Iot Client!"
-echo "Number of video rtsp streams: $contid"
+echo "Number of video streams: $contid"
 echo ""
 echo "Start nscIotService by command:"
 echo "sudo docker-compose up -d"
