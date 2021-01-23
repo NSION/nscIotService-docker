@@ -7,6 +7,19 @@ rm ./nscIotConfig/*
 for keyfile in `ls ./iotkey`; do
 export iotkey=$keyfile
 done
+echo "******************************************"
+echo "NSC Iot client setup configurator:
+echo ""
+echo "Select HW configuration"
+echo "1. Intel based amd64"
+echo "2. Raspberry pi 4 arm32"
+echo "3. Raspberry pi 4 8GB arm64"
+declare -i HWCONF
+read HWCONF
+if $HWCONF == 1 then export hw="amd64"
+if $HWCONF == 2 then export hw="arm"
+if $HWCONF == 3 then export hw="arm64"
+echo ""
 echo "Number of video streams (^C to interrupt):"
 declare -i STREAMS
 read STREAMS
@@ -40,10 +53,10 @@ do
 done
 cat docker-compose-header.yml docker-compose-containers.yml docker-compose-footer.yml > docker-compose.yml
 rm -f docker-compose-containers.yml
-echo "++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "************************************************"
 echo "New configuration is created for NSC Iot Client!"
 echo "Number of video streams: $contid"
 echo ""
 echo "Start nscIotService by command:"
 echo "sudo docker-compose up -d"
-echo "++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "************************************************"
