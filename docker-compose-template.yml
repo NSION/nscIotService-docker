@@ -3,7 +3,7 @@
       environment:
         - SYSTEM_UUID_KEY=${uuid}
       container_name: nsciotservice${contid}
-      image: nsion/nsciotservice:latest
+      image: nsiontech/nsciotservice:${hw}
       volumes:
         - ./nscIotConfig/iotservice.properties${contid}:/opt/tomcat/iotservice.properties
         - ./iotkey/${iotkey}:/opt/tomcat/webapps/${iotkey}
