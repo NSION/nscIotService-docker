@@ -16,27 +16,27 @@ echo "2. Raspberry pi 4 4GB or less - arm32"
 echo "3. Raspberry pi 4 8GB - arm64"
 declare -i HWCONF
 read HWCONF
-if [$HWCONF -eq 1] 
-  then 
+if [ $HWCONF -eq 1 ]
+then
     export hw="amd64"
 fi
-if [$HWCONF -eq 2] 
-  then 
+if [ $HWCONF -eq 2 ]
+then
     export hw="arm"
 fi
-if [$HWCONF -eq 3] 
-  then 
+if [ $HWCONF -eq 3 ]
+then
     export hw="arm64"
 fi
-if [$HWCONF -gt 3] 
-  then 
+if [ $HWCONF -gt 3 ]
+then
     echo "Selected value not in range 1-3"
-  exit 0
+exit 0
 fi
-if [$HWCONF -lt 1] 
-  then 
+if [ $HWCONF -lt 1 ]
+then
     echo "Selected value not in range 1-3"
-  exit 0
+exit 0
 fi
 echo ""
 echo "Number of video streams (^C to interrupt):"
