@@ -7,7 +7,6 @@
       volumes:
         - ./nscIotConfig/iotservice.properties${contid}:/opt/tomcat/iotservice.properties
         - ./iotkey/${iotkey}:/opt/tomcat/webapps/${iotkey}
-        - ./nscwars/nscIotService.war:/opt/tomcat/webapps/nscIotService.war
         - ./logs/nsciotservice1:/opt/tomcat/logs
       networks:
         nsciot-network:
