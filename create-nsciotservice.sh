@@ -26,11 +26,11 @@ if [$HWCONF -eq 3]
   then export hw="arm64"
 fi
 if [$HWCONF -gt 3] 
-  then echo "Select value not in range 1-3"
+  then echo "Selected value not in range 1-3"
   exit 0
 fi
 if [$HWCONF -lt 1] 
-  then echo "Select value not in range 1-3"
+  then echo "Selected value not in range 1-3"
   exit 0
 fi
 echo ""
