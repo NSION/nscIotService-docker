@@ -42,7 +42,16 @@ cd ~/nscIotService-docker
 Define number of video streams, 5 is recommended max number. 
 Below as an example the stream source value is set 2. 
 Both streams are using the same demo rtsp stream source
+```text 
+**********************************************************
+NSC Iot client setup configurator:
 
+Select HW configuration
+1. Intel based - amd64
+2. Raspberry pi 4 4GB or less - arm32
+3. Raspberry pi 4 8GB - arm64
+1
+```
 ```text 
 Number of video streams (^C to interrupt):
 2
