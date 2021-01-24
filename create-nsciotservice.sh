@@ -33,7 +33,7 @@ then
 fi
 if [ $HWCONF -eq 2 ]
 then
-    export hw="arm"
+    export hw="armhf"
 fi
 if [ $HWCONF -eq 3 ]
 then
