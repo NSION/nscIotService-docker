@@ -10,7 +10,7 @@ done
 echo "**********************************************************"
 echo "NSC Iot client setup configurator:"
 echo ""
-echo "Select HW configuration"
+echo "Select HW configuration:"
 echo "1. Linux, MacOS or Win 64bit OS - amd64"
 echo "2. Raspberry pi 4 with 32bit OS - arm32"
 echo "3. Raspberry pi 4 with 64bit OS - arm64"
