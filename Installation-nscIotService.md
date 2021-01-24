@@ -1,7 +1,7 @@
 # Install nscIotService
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
 ## Prerequisites for installation:
-#### Docker with docker-compose is installed. Below list of instructions for several OS
+#### Docker with docker-compose is installed. Below list is collecting detailed instruction guides for several OS to install Docker
 + [Windows](https://docs.docker.com/docker-for-windows/install-windows-home/)
 + [MAC](https://docs.docker.com/docker-for-mac/install/)
 + [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
