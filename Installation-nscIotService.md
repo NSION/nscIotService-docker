@@ -40,17 +40,17 @@ cd ~/nscIotService-docker
 ./create-nsciotservice.sh
 ```
 Define hardware configuration. 
-- Most typical hw configuration is amd64 by covering Windows, Mac and most of the Linux servers
+- Most typical hw configuration is amd64 by covering WindowsOS, MacOS and most of the Linux servers OS
 - Raspberry pi 4 or Jetson boards are using arm32 based HW
-- New Raspberry pi 4 8GB boards or new MAC laptops are using arm64 based HW
+- New Raspberry pi 4 boards with 8GB RAM or new MacOS laptops are using arm64 based HW
 ```text 
 **********************************************************
 NSC Iot client setup configurator:
 
-Select HW configuration
-1. Intel based - amd64
-2. Raspberry pi 4 4GB or less - arm32
-3. Raspberry pi 4 8GB - arm64
+Select HW configuration:
+1. Linux, MacOS or Win 64bit OS - amd64
+2. Raspberry pi 4 with 32bit OS - arm32
+3. Raspberry pi 4 with 64bit OS - arm64
 1
 ```
 Define number of video streams, 5 is recommended max number. 
@@ -133,6 +133,3 @@ Change one of the video source configuration files on folder ./nscIotConfig
 cd ~/nscIotService-docker
 sudo docker-compose restart
 ```
-
-
-
