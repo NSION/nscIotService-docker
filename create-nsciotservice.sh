@@ -11,9 +11,9 @@ echo "**********************************************************"
 echo "NSC Iot client setup configurator:"
 echo ""
 echo "Select HW configuration"
-echo "1. Intel based - amd64"
-echo "2. Raspberry pi 4 4GB or less - arm32"
-echo "3. Raspberry pi 4 8GB - arm64"
+echo "1. Linux, MacOS or Win 64bit OS - amd64"
+echo "2. Raspberry pi 4 with 32bit OS - arm32"
+echo "3. Raspberry pi 4 with 64bit OS - arm64"
 declare -i HWCONF
 read HWCONF
 if [ $HWCONF -eq 1 ]
