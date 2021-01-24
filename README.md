@@ -64,7 +64,7 @@ More information about NSC3 platforms:
 - FFMPEG & dependency libraries for docker image
 - Video-for-linux services v4l2-util
 - Apache Tomcat
-- NSCIotClient war package
+- NSCIotClient application
 
 ### nscIotService Docker architecture:
 ![nscIotService Docker architecture](https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotService-docker.png)
