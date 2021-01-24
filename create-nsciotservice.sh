@@ -57,8 +57,8 @@ declare -i i=1
 until test $i -gt $STREAMS
 do
   echo "RTSP url address for video stream number $i:"
-  read RTSP$i
-  export RTSPurl=$RTSP$i
+  read RTSP
+  export RTSPurl=$RTSP
   export contid=$i
   declare -i ip
   ip=$(( $i + 1 ))
