@@ -1,11 +1,22 @@
 #!/bin/bash
 # Move old files
-mv docker-compose.yml docker-compose.old
+mv docker-compose.yml docker-compose.old 2> /dev/null
 # Remove old rtsp configuration files
-rm ./nscIotConfig/*
+rm ./nscIotConfig/* 2> /dev/null
 # Attach iot-key file name
 for keyfile in `ls ./iotkey`; do
 export iotkey=$keyfile
+if [ -z "$iotkey" ]
+then 
+	echo""
+	echo "IOT key is missing from folder ./iotkey !!"
+	echo ""
+exit 0
+else 
+	echo ""
+	echo "IOT key $iotkey found !!!"
+	echo ""
+fi  
 done
 echo "**********************************************************"
 echo "NSC Iot client setup configurator:"
@@ -67,11 +78,11 @@ do
   ) >temp
   . temp
   cat iotconf$contid > ./nscIotConfig/iotservice.properties$contid
-  rm -f iotconf$contid temp
+  rm -f iotconf$contid temp 2> /dev/null
   i=$(( $i + 1 ))
 done
 cat docker-compose-header.yml docker-compose-containers.yml docker-compose-footer.yml > docker-compose.yml
-rm -f docker-compose-containers.yml
+rm -f docker-compose-containers.yml 2> /dev/null
 echo "**********************************************************"
 echo "New $hw based configuration is created for NSC Iot Client!"
 echo "Number of video streams: $contid"
