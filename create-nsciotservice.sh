@@ -9,12 +9,12 @@ export iotkey=$keyfile
 if [ -z "$iotkey" ]
 then 
 	echo""
-	echo "IOT key is missing from folder ./iotkey !!"
+	echo "IOT key is missing from folder ./iotkey !!!"
 	echo ""
 exit 0
 else 
 	echo ""
-	echo "IOT key $iotkey found !!!"
+	echo "IOT key $iotkey found "
 	echo ""
 fi  
 done
