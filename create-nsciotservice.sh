@@ -78,6 +78,7 @@ do
   ) >temp
   . temp
   cat iotconf$contid > ./nscIotConfig/iotservice.properties$contid
+  touch ./nscIotConfig/iotservice$contid.yaml
   rm -f iotconf$contid temp 2> /dev/null
   i=$(( $i + 1 ))
 done
