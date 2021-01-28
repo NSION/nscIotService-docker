@@ -68,7 +68,7 @@ do
   ( echo "cat <<EOF >docker-compose-temp$contid.yml";
   cat docker-compose-template.yml;
   ) >temp.yml
-  . temp.yml
+  . temp.yml 2> /dev/null
   cat docker-compose-temp$contid.yml > docker-compose-temp.yml;
   cat docker-compose-temp.yml >> docker-compose-containers.yml;
   rm -f docker-compose-temp$contid.yml temp.yml docker-compose-temp.yml;
@@ -76,7 +76,7 @@ do
   ( echo "cat <<EOF >iotconf$contid";
   cat iotservice.properties-template;
   ) >temp
-  . temp
+  . temp 2> /dev/null
   cat iotconf$contid > ./nscIotConfig/iotservice.properties$contid
   touch ./nscIotConfig/iotservice$contid.yaml
   rm -f iotconf$contid temp 2> /dev/null
