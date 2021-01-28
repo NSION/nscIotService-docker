@@ -46,7 +46,7 @@ By default, only users who have administrative privileges (root users) can run c
 
 The syntax for adding users to the Docker group is:
 ```text 
-sudo usermod -aG docker $USER´
+sudo usermod -aG docker $USER
 ```
 To add the Pi user (the default user in Raspbian), use the command:
 ```text 
