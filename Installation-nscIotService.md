@@ -24,11 +24,12 @@ Following instructions are providing instructions to build the docker image loca
 cd ~
 git clone https://github.com/NSION/nscIotService-docker.git
 ```
-### Step 2:  Create nscIotService specific folder
+### Step 2:  Create nscIotService specific folder and grant execute rights for shell scripts
 ```text 
 cd ~
 mkdir ./nscIotService-docker/logs
 mkdir ./nscIotService-docker/iotkey
+chmod u+x *.sh
 ```
 ### Step 3:  Copy Nsc IoT key
 - Copy the key file to the folder ./nscIotService-docker/iotkey/
