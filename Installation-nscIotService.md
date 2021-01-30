@@ -176,6 +176,8 @@ Cronjob syntax:
 As an example set cronjob to delete older than 14 days log files daily based at 7:00 AM.
 ```text
 crontab -e
+```
+```
 0 7 * * * find ~/nscIotService-docker/logs -mtime +14 -type f -delete
 ```
 Save changes on editor ```<esc>``` -button  and ```:wq!```
