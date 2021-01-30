@@ -12,5 +12,3 @@ find $workdir -type f | sort -n  | while read -r line ;
 		printf "camera$id: $url \n"; 
 	done
 echo ""
-#( echo cat $file | sed -n 's/.*\(rtsp.*\).*/\1/p' 
-# more docker-compose.yml | grep container_name | sed -n 's/.*\(nsciotservice.\).*/\1/p'
