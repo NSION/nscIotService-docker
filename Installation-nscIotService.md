@@ -113,8 +113,9 @@ Note that at the first start will pull docker image from dockerhub to local dock
 - Recently created video devices shall be visible like below example
 ![WebUI](https://github.com/NSION/nscIotService-docker/blob/main/pictures/NSC3Web-sample.png)
 
-## Maintenence of NSCIotService:
-#### Shutdown nscIotService
+## Maintanence of NSCIotService:
+### Basic operations:
+#### Shutdown nscIotService:
 ```text
 cd ~/nscIotService-docker
 sudo docker-compose down
@@ -132,4 +133,12 @@ Change one of the video source configuration files on folder ./nscIotConfig
 ```text
 cd ~/nscIotService-docker
 sudo docker-compose restart
+```
+### Clean up log files
+NSC IoT client specific log files are located to the subfolder of ~nscIotService/logs
+### Manual clean up 
+Syntax: find <root folder> -mtime +<older than x days> -type f -delete
+As example 14 days older log files clean up
+```text
+find ~/nscIotService-docker/logs -mtime +14 -type f -delete
 ```
