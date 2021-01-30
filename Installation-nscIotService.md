@@ -134,10 +134,10 @@ Change one of the video source configuration files on folder ./nscIotConfig
 cd ~/nscIotService-docker
 sudo docker-compose restart
 ```
-### Clean up log files
+### Clean up log files:
 NSC IoT client specific log files are located to the subfolder of ~nscIotService/logs
-#### Manual clean up 
-Syntax: find <root folder> -mtime +<older than x days> -type f -delete
+#### Manual clean up:
+Syntax: ```text find <root folder> -mtime +<older than x days> -type f -delete```
 As example 14 days older log files clean up
 ```text
 find ~/nscIotService-docker/logs -mtime +14 -type f -delete
