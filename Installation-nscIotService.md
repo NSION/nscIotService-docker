@@ -107,7 +107,7 @@ sudo docker-compose up -d
 ```
 Note that at the first start will pull docker image from dockerhub to local docker registry.
 
-## Check the video stream from NSC3 WebUI:
+## Ensure that stream is visible on NSC3 WebUI:
 - Login to your NSC3 organisation
 - Select default task
 - Recently created video devices shall be visible like below example
