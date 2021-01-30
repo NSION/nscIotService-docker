@@ -128,6 +128,46 @@ Note that at the first start will pull docker image from dockerhub to local dock
 - Recently created video devices shall be visible like below example
 ![WebUI](https://github.com/NSION/nscIotService-docker/blob/main/pictures/NSC3Web-sample.png)
 
+### Troubleshooting:
+#### Check broadcasting status
+```text
+./nscIotService-broadcasting-status.sh 
+```
+As an example printout, Broadcasting for camera1 is working and camera2 service is down.
+
+```text
+*************************************************************
+NSC3 Broadcasting status per camera sourcs:
+
+camera1: {"liveStreaming":"active","connectionStatus":"connected"} 
+camera2: No broadcasting status 
+```
+#### Potential solutions
+Check container status:
+```text
+docker-compose ps
+```
+As an example printout, container1 is up and container2 is down.
+
+```text
+     Name            Command       State           Ports         
+-----------------------------------------------------------------
+nsciotservice1   catalina.sh run   Up      0.0.0.0:8091->8080/tcp
+```
+Restart docker:
+
+```text
+docker-compose restart
+```
+As an example printout, container1 is up and container2 has restarted.
+
+```text
+     Name            Command       State           Ports         
+-----------------------------------------------------------------
+nsciotservice1   catalina.sh run   Up      0.0.0.0:8091->8080/tcp
+nsciotservice2   catalina.sh run   Up      0.0.0.0:8092->8080/tcp
+```
+
 ## Maintenance of NSCIotService:
 ### Basic operations:
 #### Shutdown nscIotService:
