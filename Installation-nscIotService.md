@@ -134,12 +134,33 @@ Change one of the video source configuration files on folder ./nscIotConfig
 cd ~/nscIotService-docker
 sudo docker-compose restart
 ```
-### Clean up log files:
+### Cleanup log files:
 NSC IoT client specific log files are located to the subfolder of ~nscIotService/logs
-#### Manual clean up:
+#### Manual cleanup:
 Syntax: ```text find <root folder> -mtime +<older than x days> -type f -delete```
 
-As an example clean older than 14 days log files
+As an example to delete older than 14 days log files
 ```text
 find ~/nscIotService-docker/logs -mtime +14 -type f -delete
 ```
+#### Automated cleanup:
+Following example is based on cronjob
+
+Cronjob syntax:
+
+```text
+* * * * * command to be executed
+- - - - -
+| | | | |
+| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
+| | | ------- Month (1 - 12)
+| | --------- Day of month (1 - 31)
+| ----------- Hour (0 - 23)
+------------- Minute (0 - 59)
+```
+As an example set cronjob to delete older than 14 days log files daily based at 7:00 AM.
+```text
+crontab -e
+0 7 * * * find ~/nscIotService-docker/logs -mtime +14 -type f -delete
+```
+Save changes on editor ```<esc> :wq!```
