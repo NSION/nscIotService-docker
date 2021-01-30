@@ -138,7 +138,8 @@ sudo docker-compose restart
 NSC IoT client specific log files are located to the subfolder of ~nscIotService/logs
 #### Manual clean up:
 Syntax: ```text find <root folder> -mtime +<older than x days> -type f -delete```
-As example 14 days older log files clean up
+
+As an example clean older than 14 days log files
 ```text
 find ~/nscIotService-docker/logs -mtime +14 -type f -delete
 ```
