@@ -159,6 +159,7 @@ Restart docker:
 
 ```text
 docker-compose restart
+docker-compose ps
 ```
 As an example printout, container1 is up and container2 has restarted.
 
