@@ -154,6 +154,7 @@ As an example printout, container1 is up and container2 is down.
      Name            Command       State           Ports         
 -----------------------------------------------------------------
 nsciotservice1   catalina.sh run   Up      0.0.0.0:8091->8080/tcp
+nsciotservice1   catalina.sh run   Down    0.0.0.0:8092->8080/tcp
 ```
 Restart docker:
 
