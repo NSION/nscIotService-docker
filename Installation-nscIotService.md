@@ -113,7 +113,7 @@ Note that at the first start will pull docker image from dockerhub to local dock
 - Recently created video devices shall be visible like below example
 ![WebUI](https://github.com/NSION/nscIotService-docker/blob/main/pictures/NSC3Web-sample.png)
 
-## Maintanence of NSCIotService:
+## Maintenance of NSCIotService:
 ### Basic operations:
 #### Shutdown nscIotService:
 ```text
