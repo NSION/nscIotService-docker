@@ -70,7 +70,7 @@ RTSP url address for video stream number 2:
 rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 ```
 
-### Step 5:  Verify installation
+### Step 5: Check installation 
 
 Check that configuration files are created accordingly.
 
