@@ -150,7 +150,7 @@ cd ~/nscIotService-docker
 sudo docker-compose restart
 ```
 ### Cleanup log files:
-NSC IoT client specific log files are located to the subfolder of ~nscIotService/logs
+NSC IoT client specific log files are located to the several subfolders of ~nscIotService/logs
 #### Manual cleanup:
 Syntax: ```text find <root folder> -mtime +<older than x days> -type f -delete```
 
