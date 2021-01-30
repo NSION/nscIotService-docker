@@ -99,6 +99,21 @@ as example output
 IOT_SERVICE_LIVE_AUTOSTART_NAME_KEY=true
 IOT_SERVICE_LIVE_NETWORK_INPUTSOURCE_NAME_KEY=rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 ```
+#### Check video sources:
+
+Following command prints a list of rtsp url addresses configured per camera:
+```text 
+./nscIotService-inbound-streams.sh
+```
+Example of expected output:
+```text 
+*************************************************************
+List of rtsp url addresses configured per camera: 
+
+camera1: rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+camera2: rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+```
+
 ## Start NSCiotServices:
 
 ```text
