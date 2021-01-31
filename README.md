@@ -10,7 +10,7 @@ Instructions for several Docker runtime environments
 - Linux with Docker
 - Raspberry Pi 4 (Dedicated instruction to configure Docker on top of Raspberry Pi 4)
 
-**Prerequisites for installation:
+**Prerequisites for installation:**
 - [x] At least 4Cores / 4GB RAM on edge computer
 - [x] Docker and docker-compose are installed
 - [x] Existing account for NSC3 services
