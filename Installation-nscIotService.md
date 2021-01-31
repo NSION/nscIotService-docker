@@ -38,6 +38,7 @@ git clone https://github.com/NSION/nscIotService-docker.git
 cd ~
 mkdir ./nscIotService-docker/logs
 mkdir ./nscIotService-docker/iotkey
+mkdir ./nscIotService-docker/nscIotConfig
 chmod u+x *.sh
 ```
 ### Step 3:  Copy Nsc IoT key
