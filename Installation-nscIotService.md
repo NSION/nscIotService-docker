@@ -1,7 +1,7 @@
 # Install nscIotService
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
 ## Prerequisites for installation:
-#### * Docker with docker-compose is installed:
+#### + Docker with docker-compose is installed:
 
 Below list is collecting detailed guidelines for several OS to install Docker
 
@@ -11,7 +11,7 @@ Below list is collecting detailed guidelines for several OS to install Docker
 + [docker-compose](https://docs.docker.com/compose/install/)
 + [Raspberry Pi4](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
 
-#### * NSC IOT key:
+#### + NSC IOT key:
 
 Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
 
@@ -19,7 +19,10 @@ Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user 
 + Select the targeted organization and click "arrow down" icon
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/how-to-iotkey.png" width="324" height="324">
 
-#### * RTSP url addresses for each of the camera sources
+#### + RTSP url addresses for each of the camera sources
+
+The Real Time Streaming Protocol (RTSP) is a network control protocol designed for use in entertainment and communications systems to control streaming media servers. [RTSP Wiki] (https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol). 
+
 
 ## Setup enviroment:
 - Login to server. 
