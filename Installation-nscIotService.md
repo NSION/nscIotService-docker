@@ -247,7 +247,7 @@ Root dir: ```~/nscIotService-docker```
 | **RTSP** | ```./nscIotConfig/iotservice.properties<nr>``` | ```IOT_SERVICE_LIVE_NETWORK_INPUTSOURCE_NAME_KEY=rtsp://xxx``` | ```sudo docker-compose restart``` |
 | **Broadcast parameters** | ```./nscIotConfig/iotservice.properties<nr>``` | see below chapter ... | ```sudo docker-compose restart``` |
 
-### Broadcast parameters:
+### Optimize broadcasting:
 
 Optimizing video broadcasting parameters:
 
