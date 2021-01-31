@@ -24,7 +24,7 @@ Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user 
 The Real Time Streaming Protocol (RTSP) is a network control protocol designed for use in entertainment and communications systems to control streaming media servers. [RTSP Wiki](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol). 
 
 
-## Setup enviroment:
+## Setup environment:
 - Login to server. 
 - Open terminal to home folder
 
