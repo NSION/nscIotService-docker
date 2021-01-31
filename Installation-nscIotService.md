@@ -282,3 +282,4 @@ Note that changes will be affected when remove the ```#``` at the beginning of t
 # --- Picture height size 240pix as example
 #IOT_SERVICE_LIVE_FRAME_HEIGHT_KEY=240
 ```
+### [nscIotService API spec:](https://github.com/NSION/nscIotService-emergency-button#api-specifications)
