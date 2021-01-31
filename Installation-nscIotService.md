@@ -1,4 +1,4 @@
-# Install nscIotService
+# Install nscIotService:
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
 ## Prerequisites for installation:
 - [x] **Docker with docker-compose is installed:**
