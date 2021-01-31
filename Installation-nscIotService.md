@@ -227,7 +227,7 @@ Save changes on editor ```<esc>``` -button  and ```:wq!```
 
 #### Update git repository:
 nscIotService-docker git repository is under continous development. Therefore it is reasonable to update local configuration at time to time.
-This update won't overwrite your existing runtime configuration.
+This update won't overwrite your existing runtime configuration. This action won't upgrade nscIotServices, but brings new tools to manage NSC IOT services.
 
 ```text
 cd ~/nscIotService-docker
