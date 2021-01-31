@@ -249,3 +249,23 @@ Root dir: ```~/nscIotService-docker```
 
 ### Broadcast parameters:
 
+Optimizing video broadcasting parameters:
+Configuration file location 
+~/nscIotService/nscIotConfig/iotservice.properties(number)
+
+``` text
+# --- Autostart for selected camera source
+#IOT_SERVICE_LIVE_AUTOSTART_NAME_KEY=true
+# --- rtsp camera source
+#IOT_SERVICE_LIVE_NETWORK_INPUTSOURCE_NAME_KEY=rtsp://<user>:<passkey>@<IP address>
+# --- Integrated device camera support as example
+#IOT_SERVICE_LIVE_CAMERA_INPUTSOURCE_NAME_KEY=Integrated Camera
+# --- Frame rate fps15 as example
+#IOT_SERVICE_LIVE_FRAMERATE_KEY=15
+# --- FFMPEG quality parameters https://ffmpeg.org/ffmpeg.html
+# IOT_SERVICE_LIVE_FFMPEG_QUALITY_KEY=30
+# --- Picture width size 320pix as example
+#IOT_SERVICE_LIVE_FRAME_WIDTH_KEY=320 
+# --- Picture height size 240pix as example
+#IOT_SERVICE_LIVE_FRAME_HEIGHT_KEY=240
+```
