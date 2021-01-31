@@ -242,7 +242,7 @@ Root dir: ```~/nscIotService-docker```
 | **Object** | **Configuration file** | **Example** | **Enable changes** |
 | :--- |     :---      |   :---  |       :---  |
 | **IP address** | ```docker-compose.yml``` | ```ipv4_address: 172.21.0.2``` | ```sudo docker-compose restart``` |
-| **Port** | ```docker-compose.yml``` | ```- 8091:8080``` // 8091 as exposed port | ```sudo docker-compose restart``` |
+| **Port** | ```docker-compose.yml``` | ```- 8091:8080 // 8091 as exposed port``` | ```sudo docker-compose restart``` |
 | **IOT key** | ```docker-compose.yml``` | ```./iotkey/test.nsc.iot:/opt/tomcat/webapps/test.nsc.iot``` | ```sudo docker-compose restart``` |
 | **RTSP** | ```./nscIotConfig/iotservice.properties<nr>``` | ```IOT_SERVICE_LIVE_NETWORK_INPUTSOURCE_NAME_KEY=rtsp://xxx``` | ```sudo docker-compose restart``` |
 | **Broadcast parameters** | ```./nscIotConfig/iotservice.properties<nr>``` | see below chapter ... | ```sudo docker-compose restart``` |
