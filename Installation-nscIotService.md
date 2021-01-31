@@ -146,7 +146,7 @@ camera2: No broadcasting status
 #### Potential solutions
 Check container status:
 ```text
-docker-compose ps
+sudo docker-compose ps
 ```
 As an example printout, container1 is up and container2 is down.
 
@@ -159,8 +159,8 @@ nsciotservice2   catalina.sh run   Down    0.0.0.0:8092->8080/tcp
 Restart docker:
 
 ```text
-docker-compose restart
-docker-compose ps
+sudo docker-compose restart
+sudo docker-compose ps
 ```
 As an example printout, container1 is up and container2 has restarted.
 
@@ -224,3 +224,12 @@ crontab -e
 0 7 * * * find ~/nscIotService-docker/logs -mtime +14 -type f -delete
 ```
 Save changes on editor ```<esc>``` -button  and ```:wq!```
+
+#### Update git repository:
+nscIotService-docker git repository is under continous development. Therefore it is reasonable to update local configuration at time to time.
+This update won't overwrite your existing runtime configuration.
+
+```text
+cd ~/nscIotService-docker
+git pull
+```
