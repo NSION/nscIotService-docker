@@ -56,6 +56,7 @@ More information about NSC3 platforms:
 - [NSC3 product description](https://www.nsiontec.com/platform/)
 - [NSC3 IOT product description](https://www.nsiontec.com/wp-content/uploads/2020/09/ProductSheets_IoT.pdf)
 - [NSION Ltd - Contact information](https://www.nsiontec.com/company/contact/)
+- [nscIotService API spec](https://github.com/NSION/nscIotService-emergency-button#api-specifications)
 
 ### Components for nscIotService container:
 - Docker images is based on Debian-slim repositories.
