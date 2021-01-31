@@ -250,8 +250,9 @@ Root dir: ```~/nscIotService-docker```
 ### Broadcast parameters:
 
 Optimizing video broadcasting parameters:
-Configuration file location 
-~/nscIotService/nscIotConfig/iotservice.properties(number)
+Configuration file location: ```~/nscIotService/nscIotConfig/iotservice.properties(number)```
+
+Note that changes will be affected when remove the ```#``` at the beginning of the line.
 
 ``` text
 # --- Autostart for selected camera source
