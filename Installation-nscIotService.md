@@ -249,8 +249,6 @@ Root dir: ```~/nscIotService-docker```
 
 ### Optimize broadcasting:
 
-Optimizing video broadcasting parameters:
-
 Configuration file location: ```~/nscIotService/nscIotConfig/iotservice.properties(number)```
 
 Note that changes will be affected when remove the ```#``` at the beginning of the line.
