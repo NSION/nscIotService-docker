@@ -11,11 +11,11 @@ Instructions for several Docker runtime environments
 - Raspberry Pi 4 (Dedicated instruction to configure Docker on top of Raspberry Pi 4)
 
 Prerequisites for installation:
-- At least 4Cores / 4GB RAM on edge computer
-- Docker and docker-compose are installed
-- Existing account for NSC3 services
-- NSC3 specific iot-key for backend authentication
-- Recommended OS: Ubuntu 18.04 LTS or later.
+- [x] At least 4Cores / 4GB RAM on edge computer
+- [x] Docker and docker-compose are installed
+- [x] Existing account for NSC3 services
+- [x] NSC3 specific iot-key for backend authentication
+- [x] Recommended OS: Ubuntu 18.04 LTS or later.
 
 ## Installation instructions:
 - [Installation of nscIotService:](https://github.com/NSION/nscIotService-docker/blob/main/Installation-nscIotService.md)
