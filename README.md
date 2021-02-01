@@ -68,4 +68,4 @@ More information about NSC3 platforms:
 
 ### nscIotService Docker architecture:
 ![nscIotService Docker architecture](https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotService-docker.png)
-Above architecture diagram describes container interfaces to serve 4 dedicated data sources. 
+Above architecture diagram describes container interfaces to serve 4 dedicated video sources. 
