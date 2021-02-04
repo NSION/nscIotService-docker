@@ -22,6 +22,7 @@ Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user 
 - [x] **RTSP url addresses for each of the camera sources:**
 
 The Real Time Streaming Protocol (RTSP) is a network control protocol designed for use in entertainment and communications systems to control streaming media servers. [RTSP Wiki](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol). 
++ Ensure that DHCP is activated on camera.
 
 
 ## Setup environment:
