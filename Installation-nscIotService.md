@@ -28,7 +28,10 @@ The Real Time Streaming Protocol (RTSP) is a network control protocol designed f
 ## Setup environment:
 - Login to server. 
 - Open terminal to home folder
-
+- Install UUIDGEN tool
+```text 
+sudo apt-get install uuid-runtime
+```
 ### Step 1: Clone git project 
 ```text 
 cd ~
