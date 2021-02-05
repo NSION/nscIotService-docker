@@ -246,6 +246,7 @@ This update won't overwrite your existing runtime configuration. This action won
 ```text
 cd ~/nscIotService-docker
 git pull
+chmod u+x *.sh
 ```
 ## Configure nscIotService:
 
