@@ -56,8 +56,8 @@ cd ~/nscIotService-docker
 ```
 Define hardware configuration. 
 - Most typical hw configuration is amd64 by covering WindowsOS, MacOS and most of the Linux servers OS
-- Raspberry pi 4 or Jetson boards are using arm32 based HW
-- New Raspberry pi 4 boards with 8GB RAM or new MacOS laptops are using arm64 based HW
+- Raspberry pi 4 is using arm32 based HW
+- New Raspberry pi 4 boards with 8GB RAM, Jetson boards and new MacOS laptops are using arm64 based HW
 ```text 
 **********************************************************
 NSC Iot client setup configurator:
