@@ -43,6 +43,7 @@ cd ~
 mkdir ./nscIotService-docker/logs
 mkdir ./nscIotService-docker/iotkey
 mkdir ./nscIotService-docker/nscIotConfig
+cd ./nscIotService-docker
 chmod u+x *.sh
 ```
 ### Step 3:  Copy Nsc IoT key
