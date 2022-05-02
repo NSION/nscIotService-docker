@@ -1,7 +1,7 @@
 # Install nscIotService:
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
 ## Prerequisites for installation:
-- [x] **Minimum HW requirements: 4 CPU cores, 4GB ram, 32GB free disk space.
+- [x] **Minimum HW requirements: 4 CPU cores, 4GB ram, 32GB free disk space.**
 - [x] **Docker with docker-compose is installed:**
 
 Below list is collecting detailed guidelines for several OS to install Docker
