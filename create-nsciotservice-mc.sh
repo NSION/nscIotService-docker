@@ -49,6 +49,7 @@ then
     echo "Selected value $$HWCONF is out of range 1-3!"
 exit 0
 fi
+export uuid=$(uuidgen)
 # create docker-compose file
 ( echo "cat <<EOF >docker-compose-mc-temp.yml";
 cat docker-compose-mc-template.yml;
@@ -56,6 +57,13 @@ cat docker-compose-mc-template.yml;
 . temp.yml 2> /dev/null
 cat docker-compose-mc-temp.yml > docker-compose.yml;
 rm -f docker-compose-mc-temp.yml temp.yml 2> /dev/null
+# create header file for iot conf
+( echo "cat <<EOF >docker-compose-mc-temp.yml";
+cat docker-compose-mc-template.yml;
+) >temp.yml
+. temp.yml 2> /dev/null
+cat docker-compose-mc-temp.yml > docker-compose.yml;
+
 echo ""
 echo "Number of video streams (^C to interrupt):"
 declare -i STREAMS
@@ -79,6 +87,7 @@ do
   rm -f iotconf$contid temp 2> /dev/null
   i=$(( $i + 1 ))
 done
+cat iotservice-header-temp.yml docker-compose-containers.yml > docker-compose.yml
 echo "**********************************************************"
 echo "New $hw based configuration is created for NSC Iot Client!"
 echo "Number of video streams: $contid"
