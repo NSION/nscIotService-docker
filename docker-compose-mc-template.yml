@@ -13,7 +13,7 @@
         nsciot-network:
          ipv4_address: ${ipnumber}
       ports:
-        - 8090{contid}:8080
+        - 8090:8080
       # Example for device video sources, like usb cam
       #devices:
       #  - "/dev/video0:/dev/video0"   
