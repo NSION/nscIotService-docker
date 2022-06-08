@@ -64,6 +64,7 @@ cat iotservice.template;
 . temp.yml 2> /dev/null
 cat iotservice.temp > iotservice-header.temp;
 rm -f iotservice.temp temp.yml 2> /dev/null
+touch iotservice.temp
 echo ""
 echo "Number of video streams (^C to interrupt):"
 declare -i STREAMS
@@ -75,9 +76,6 @@ do
   echo "RTSP url address for video stream number $i:"
   read RTSP
   export RTSPurl=$RTSP
-  export contid=$i
-  declare -i ip
-  ip=$(( $i + 1 ))
   # create video input configuration
   ( echo "cat <<EOF >iotservice-temp.yml";
   cat ipcamera.template;
