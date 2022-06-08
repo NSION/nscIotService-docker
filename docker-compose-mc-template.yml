@@ -11,7 +11,7 @@
         - ./logs:/opt/tomcat/logs
       networks:
         nsciot-network:
-         ipv4_address: ${ipnumber}
+         ipv4_address: 172.21.0.1
       ports:
         - 8090:8080
       # Example for device video sources, like usb cam
