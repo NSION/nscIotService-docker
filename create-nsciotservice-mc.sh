@@ -62,8 +62,8 @@ rm -f docker-compose-mc-temp.yml temp.yml 2> /dev/null
 cat iotservice.template;
 ) >temp.yml
 . temp.yml 2> /dev/null
-cat temp.yml > iotservice-header.temp;
-rm -f temp.yml 2> /dev/null
+cat iotservice.temp > iotservice-header.temp;
+rm -f iotservice.temp temp.yml 2> /dev/null
 echo ""
 echo "Number of video streams (^C to interrupt):"
 declare -i STREAMS
@@ -79,7 +79,7 @@ do
   declare -i ip
   ip=$(( $i + 1 ))
   # create video input configuration
-  ( echo "cat <<EOF >iotservice-temp.yml;
+  ( echo "cat <<EOF >iotservice-temp.yml";
   cat ipcamera.template;
   ) >temp
   . temp 2> /dev/null
