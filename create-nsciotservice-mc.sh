@@ -58,12 +58,12 @@ cat docker-compose-mc-template.yml;
 cat docker-compose-mc-temp.yml > docker-compose.yml;
 rm -f docker-compose-mc-temp.yml temp.yml 2> /dev/null
 # create header file for iot conf
-( echo "cat <<EOF >docker-compose-mc-temp.yml";
-cat docker-compose-mc-template.yml;
+( echo "cat <<EOF >iotservice.temp";
+cat iotservice.template;
 ) >temp.yml
 . temp.yml 2> /dev/null
-cat docker-compose-mc-temp.yml > docker-compose.yml;
-
+cat temp.yml > iotservice-header.temp;
+rm -f temp.yml 2> /dev/null
 echo ""
 echo "Number of video streams (^C to interrupt):"
 declare -i STREAMS
@@ -87,7 +87,8 @@ do
   rm -f iotconf$contid temp 2> /dev/null
   i=$(( $i + 1 ))
 done
-cat iotservice-header-temp.yml docker-compose-containers.yml > docker-compose.yml
+cat iotservice-header.temp iotservice.temp > ./nscIotConfig/iotservice.yml
+rm -f iotservice-header.temp iotservice.temp 2> /dev/null
 echo "**********************************************************"
 echo "New $hw based configuration is created for NSC Iot Client!"
 echo "Number of video streams: $contid"
