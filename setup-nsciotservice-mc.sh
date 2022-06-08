@@ -56,7 +56,7 @@ cat docker-compose-mc-template.yml;
 . temp.yml 2> /dev/null
 cat docker-compose-mc-temp.yml > docker-compose-containers.yml;
 rm -f docker-compose-mc-temp.yml temp.yml;
-cat docker-compose-header.yml docker-compose-containers.yml docker-compose-footer.yml > docker-compose.yml
+cat docker-compose-containers.yml > docker-compose.yml
 rm -f docker-compose-containers.yml 2> /dev/null
 echo ""
 echo "Number of video streams (^C to interrupt):"
