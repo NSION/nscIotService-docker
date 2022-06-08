@@ -51,6 +51,13 @@ chmod u+x *.sh
 - Copy the key file to the folder ./nscIotService-docker/iotkey/
 
 ### Step 4:  Setup your configuration
+#### NSC3 release 3.6 onwards (Multicamera support on single container)
+
+```text 
+cd ~/nscIotService-docker
+./create-nsciotservice-mc.sh
+```
+#### NSC3 release older releases (Multicamera support on multiple containers)
 
 ```text 
 cd ~/nscIotService-docker
@@ -91,6 +98,15 @@ rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 Check that configuration files are created accordingly.
 
 #### docker-compose.yml
+##### NSC3 release 3.6 onwards (Multicamera support on single container)
+
+```text 
+more docker-compose.yml
+```
+- Check that file looks as proper docker-compose yaml file
+- Only 1 Container is created
+
+##### NSC3 release older releases (Multicamera support on multiple containers)
 
 ```text 
 more docker-compose.yml
@@ -99,7 +115,28 @@ more docker-compose.yml
 - 1 Container per stream is created. Check that number of containers are matching with your setup
 
 #### Video inbound configuration
+##### NSC3 release 3.6 onwards (Multicamera support on single container)
+```text 
+more ./nscIotConfig/iotservice.yaml
+```
+as example output
+```text 
+---
+configuration:
+  deviceID: "79EA70C0-AD8C-4CD1-96DF-B0E443ACC3BE"
+  location:
+    latitude: 0.0
+    longitude: 0.0
+sources:
+- identifier: "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"
+  type: "NETWORKCAMERA"
+  autostart: true
+- identifier: "rtsp://rtsp.stream/pattern"
+  type: "NETWORKCAMERA"
+  autostart: true
+```
 
+##### NSC3 release older releases (Multicamera support on multiple containers)
 ```text 
 ls ./nscIotConfig
 ```
