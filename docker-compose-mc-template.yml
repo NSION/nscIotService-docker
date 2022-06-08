@@ -7,7 +7,6 @@ services:
       container_name: nsciotservice
       image: nsiontech/nsciotservice:${hw}
       volumes:
-        - ./nscIotConfig/iotservice.properties:/opt/tomcat/iotservice.properties
         - ./nscIotConfig/iotservice.yaml:/opt/tomcat/iotservice.yaml
         - ./iotkey/${iotkey}:/opt/tomcat/webapps/${iotkey}
         - ./logs:/opt/tomcat/logs
