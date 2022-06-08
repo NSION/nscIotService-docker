@@ -8,6 +8,7 @@ services:
       image: nsiontech/nsciotservice:${hw}
       volumes:
         - ./nscIotConfig/iotservice.yaml:/opt/tomcat/iotservice.yaml
+        - ./nscIotConfig/iotservice.properties:/opt/tomcat/iotservice.properties
         - ./iotkey/${iotkey}:/opt/tomcat/webapps/${iotkey}
         - ./logs:/opt/tomcat/logs
       networks:
