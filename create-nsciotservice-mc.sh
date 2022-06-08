@@ -71,20 +71,20 @@ read STREAMS
 declare -i i=1
 until test $i -gt $STREAMS
 do
+  touch iotservice-temp.yml
   echo "RTSP url address for video stream number $i:"
   read RTSP
   export RTSPurl=$RTSP
   export contid=$i
   declare -i ip
   ip=$(( $i + 1 ))
-  export uuid=$(uuidgen)
   # create video input configuration
-  ( echo "cat <<EOF >iotconf$contid";
-  cat iotservice.properties-template;
+  ( echo "cat <<EOF >iotservice-temp.yml;
+  cat ipcamera.template;
   ) >temp
   . temp 2> /dev/null
-  cat iotconf$contid > ./nscIotConfig/iotservice.properties$contid
-  rm -f iotconf$contid temp 2> /dev/null
+  cat iotservice-temp.yml >> iotservice.temp
+  rm -f iotservice-temp.yml temp 2> /dev/null
   i=$(( $i + 1 ))
 done
 cat iotservice-header.temp iotservice.temp > ./nscIotConfig/iotservice.yml
