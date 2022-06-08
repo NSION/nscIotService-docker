@@ -80,7 +80,7 @@ do
   cat ipcamera.template;
   ) >temp
   . temp 2> /dev/null
-  cat iotservice-temp$i.yml >> iotservice.temp
+  cat iotservice-temp$i.yml >> iotservice.temp;
   rm -f iotservice-temp$i.yml temp 2> /dev/null
   i=$(( $i + 1 ))
 done
