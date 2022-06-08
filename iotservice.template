@@ -1,10 +1,6 @@
 ---
 configuration:
-  deviceID: "12f234d112233"
+  deviceID: "${uuid}"
   location:
     latitude: 0.0
     longitude: 0.0
-sources:
-- identifier: $RTSPurl
-  type: "NETWORKCAMERA"
-  autostart: true
