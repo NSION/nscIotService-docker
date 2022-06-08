@@ -29,15 +29,15 @@ declare -i HWCONF
 read HWCONF
 if [ $HWCONF -eq 1 ]
 then
-    export hw="amd64"
+    export hw="rc-amd64"
 fi
 if [ $HWCONF -eq 2 ]
 then
-    export hw="armhf"
+    export hw="rc-armhf"
 fi
 if [ $HWCONF -eq 3 ]
 then
-    export hw="arm64"
+    export hw="rc-arm64"
 fi
 if [ $HWCONF -gt 3 ]
 then
@@ -49,6 +49,15 @@ then
     echo "Selected value $$HWCONF is out of range 1-3!"
 exit 0
 fi
+# create docker-compose file
+( echo "cat <<EOF >docker-compose-mc-temp.yml";
+cat docker-compose-mc-template.yml;
+) >temp.yml
+. temp.yml 2> /dev/null
+cat docker-compose-mc-temp.yml > docker-compose-containers.yml;
+rm -f docker-compose-mc-temp.yml temp.yml;
+cat docker-compose-header.yml docker-compose-containers.yml docker-compose-footer.yml > docker-compose.yml
+rm -f docker-compose-containers.yml 2> /dev/null
 echo ""
 echo "Number of video streams (^C to interrupt):"
 declare -i STREAMS
@@ -62,28 +71,16 @@ do
   export contid=$i
   declare -i ip
   ip=$(( $i + 1 ))
-  export ipnumber="172.21.0.$ip"
   export uuid=$(uuidgen)
-  # create containers
-  ( echo "cat <<EOF >docker-compose-temp$contid.yml";
-  cat docker-compose-template.yml;
-  ) >temp.yml
-  . temp.yml 2> /dev/null
-  cat docker-compose-temp$contid.yml > docker-compose-temp.yml;
-  cat docker-compose-temp.yml >> docker-compose-containers.yml;
-  rm -f docker-compose-temp$contid.yml temp.yml docker-compose-temp.yml;
   # create video input configuration
   ( echo "cat <<EOF >iotconf$contid";
   cat iotservice.properties-template;
   ) >temp
   . temp 2> /dev/null
   cat iotconf$contid > ./nscIotConfig/iotservice.properties$contid
-  touch ./nscIotConfig/iotservice$contid.yaml
   rm -f iotconf$contid temp 2> /dev/null
   i=$(( $i + 1 ))
 done
-cat docker-compose-header.yml docker-compose-containers.yml docker-compose-footer.yml > docker-compose.yml
-rm -f docker-compose-containers.yml 2> /dev/null
 echo "**********************************************************"
 echo "New $hw based configuration is created for NSC Iot Client!"
 echo "Number of video streams: $contid"
