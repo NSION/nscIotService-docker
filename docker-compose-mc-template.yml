@@ -1,1 +1,19 @@
-docker
+    nsciot:
+      restart: unless-stopped
+      environment:
+        - SYSTEM_UUID_KEY=${uuid}
+      container_name: nsciotservice
+      image: nsiontech/nsciotservice:${hw}
+      volumes:
+        - ./nscIotConfig/iotservice.properties:/opt/tomcat/iotservice.properties
+        - ./nscIotConfig/iotservice.yaml:/opt/tomcat/iotservice.yaml
+        - ./iotkey/${iotkey}:/opt/tomcat/webapps/${iotkey}
+        - ./logs/nsciotservice:/opt/tomcat/logs
+      networks:
+        nsciot-network:
+         ipv4_address: ${ipnumber}
+      ports:
+        - 8090{contid}:8080
+      # Example for device video sources, like usb cam
+      #devices:
+      #  - "/dev/video0:/dev/video0"   
