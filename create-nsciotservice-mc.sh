@@ -85,6 +85,7 @@ do
   i=$(( $i + 1 ))
 done
 cat iotservice-header.temp iotservice.temp > ./nscIotConfig/iotservice.yaml
+touch ./nscIotConfig/iotservice.properties
 rm -f iotservice-header.temp iotservice.temp 2> /dev/null
 echo "**********************************************************"
 echo "New $hw based configuration is created for NSC Iot Client!"
