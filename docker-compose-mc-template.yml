@@ -8,7 +8,7 @@
         - ./nscIotConfig/iotservice.properties:/opt/tomcat/iotservice.properties
         - ./nscIotConfig/iotservice.yaml:/opt/tomcat/iotservice.yaml
         - ./iotkey/${iotkey}:/opt/tomcat/webapps/${iotkey}
-        - ./logs/nsciotservice:/opt/tomcat/logs
+        - ./logs:/opt/tomcat/logs
       networks:
         nsciot-network:
          ipv4_address: ${ipnumber}
