@@ -1,0 +1,4 @@
+sources:
+- identifier: $RTSPurl
+  type: "NETWORKCAMERA"
+  autostart: true
