@@ -51,13 +51,13 @@ chmod u+x *.sh
 - Copy the key file to the folder ./nscIotService-docker/iotkey/
 
 ### Step 4:  Setup your configuration
-#### option1: NSC3 release 3.6 onwards (Multicamera support on single container)
+#### option1: NSC3 release 3.6 onwards (Multicamera support via single container)
 
 ```text 
 cd ~/nscIotService-docker
 ./create-nsciotservice-mc.sh
 ```
-#### option2: NSC3 release older releases (Multicamera support on multiple containers)
+#### option2: NSC3 release older releases (Multicamera support via multiple containers)
 
 ```text 
 cd ~/nscIotService-docker
@@ -98,7 +98,7 @@ rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 Check that configuration files are created accordingly.
 
 #### docker-compose.yml
-##### NSC3 release 3.6 onwards (Multicamera support on single container)
+##### NSC3 release 3.6 onwards (Multicamera support via single container)
 
 ```text 
 more docker-compose.yml
@@ -106,7 +106,7 @@ more docker-compose.yml
 - Check that file looks as proper docker-compose yaml file
 - Only 1 Container is created
 
-##### NSC3 release older releases (Multicamera support on multiple containers)
+##### NSC3 release older releases (Multicamera support via multiple containers)
 
 ```text 
 more docker-compose.yml
@@ -115,7 +115,7 @@ more docker-compose.yml
 - 1 Container per stream is created. Check that number of containers are matching with your setup
 
 #### Video inbound configuration
-##### NSC3 release 3.6 onwards (Multicamera support on single container)
+##### NSC3 release 3.6 onwards (Multicamera support via single container)
 ```text 
 more ./nscIotConfig/iotservice.yaml
 ```
@@ -136,7 +136,7 @@ sources:
   autostart: true
 ```
 
-##### NSC3 release older releases (Multicamera support on multiple containers)
+##### NSC3 release older releases (Multicamera support via multiple containers)
 ```text 
 ls ./nscIotConfig
 ```
@@ -155,7 +155,7 @@ IOT_SERVICE_LIVE_NETWORK_INPUTSOURCE_NAME_KEY=rtsp://wowzaec2demo.streamlock.net
 ```
 #### Check video sources:
 
-Note: Currently supported only for installation option 2 (Multicamera support on multiple containers)
+Note: Currently supported only for installation option 2 (Multicamera support via multiple containers)
 
 Following command prints a list of rtsp url addresses configured per camera:
 ```text 
@@ -186,7 +186,7 @@ Note that at the first start will pull docker image from dockerhub to local dock
 
 ### Troubleshooting:
 
-Note: Currently supported only for installation option 2 (Multicamera support on multiple containers)
+Note: Currently supported only for installation option 2 (Multicamera support via multiple containers)
 
 #### Check broadcasting status
 ```text
@@ -231,7 +231,7 @@ nsciotservice2   catalina.sh run   Up      0.0.0.0:8092->8080/tcp
 
 ## Maintenance of NSCIotService:
 
-Note: Currently supported only for installation option 2 (Multicamera support on multiple containers)
+Note: Currently supported only for installation option 2 (Multicamera support via multiple containers)
 
 ### Basic operations:
 #### Shutdown nscIotService:
