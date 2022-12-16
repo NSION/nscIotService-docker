@@ -92,7 +92,7 @@ volumes:
 
 - Devices: Select your Router device 
 
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint9.png" width="620" height="420">
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint9.png" width="620" height="220">
 
 - Container pulling process and initialization will take roughly 5-10 mins. 
 
