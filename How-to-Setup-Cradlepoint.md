@@ -1,4 +1,4 @@
-# Installation instructions for [Cradlepoint router]( https://cradlepoint.com) to modify router to NSC3 media gateway server:
+# Installation instructions for [Cradlepoint router]( https://cradlepoint.com) to modify router to NSC3 media gateway server purposes:
 Following instructions are providing step by step guidance to install and setup nscIOTservice for Cradlepoint router.
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint-NSC3.png" width="680" height="324">
