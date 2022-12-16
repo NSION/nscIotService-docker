@@ -69,6 +69,7 @@ services:
 volumes:
   nsciot-volume:
     driver: local
+
 ```text 
 
 #### 7. Project configuration: Compose
