@@ -7,7 +7,7 @@ Following instructions are providing step by step guidance to install and setup 
 - [x] **Cradlepoint router model [R1900](https://cradlepoint.com/product/endpoints/r1900-series/) with an Advanced License**
 - [x] **Router is connected to network**
 - [x] **NetCloud OS (NCOS) Version 7.2.20 or newer**
-- [x] **Account for Cradlepoint [NetCloud](https://www.cradlepointecm.com/ecm.html#devices/routers) **
+- [x] **Account for Cradlepoint [NetCloud](https://www.cradlepointecm.com/ecm.html#devices/routers)**
 - [x] **An existing account for the NSC3 organization**
 - [x] **NSC IOT key:**
 
