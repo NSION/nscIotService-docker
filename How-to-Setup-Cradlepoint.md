@@ -101,6 +101,13 @@ volumes:
 - Container pulling process and initialization will take roughly 5-10 mins. 
 - Container status running means that container is up and running without errors.
 
-## Configure NSC3 via local nscIoTClient manager
+## Configure NSC3 access via local nscIoTClient manager
 
-### 
+Following steps requires access to Cradlepoint local network. 
+
+
+### Open nscIoTClient local manager
+
+- Open Browser to address: http://<Cradlpoint gateway IP address>:8090 as example http://192.168.0.1:8090
+  
+  
