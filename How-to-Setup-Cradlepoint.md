@@ -123,9 +123,9 @@ Following steps requires access to Cradlepoint local network.
   
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClientDevice.png" width="600" height="320">
   
-- Define name, rtsp address and required credentials for camera.
+- Define name, rtsp address and required credentials for camera. As example rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mp4
   
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-rtsp.png" width="600" height="320">
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-rtsp.png" width="500" height="320">
 
 #### Start broadcasting NSC3 server
 
