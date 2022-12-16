@@ -90,11 +90,13 @@ volumes:
 
 #### 9. Check status of container deployment
 
-- Select 
+- Devices: Select your Router device 
+
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint9.png" width="620" height="420">
 
 - Container pulling process and initialization will take roughly 5-10 mins. 
 
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint10.png" width="420" height="420">
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint10.png" width="620" height="420">
 
 ## Configure NSC3 via local nscIoTClient manager
 
