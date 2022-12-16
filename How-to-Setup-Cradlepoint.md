@@ -127,7 +127,7 @@ Following steps requires access to Cradlepoint local network.
   
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-rtsp.png" width="500" height="320">
 
-#### Start broadcasting NSC3 server
+#### Start broadcasting to NSC3 server
 
 - Activate broadcasting to NSC3 server (Local view)
   
