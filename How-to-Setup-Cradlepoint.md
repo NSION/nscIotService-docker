@@ -1,4 +1,4 @@
-# Installation instructions for [Cradlepoint router]( https://cradlepoint.com) to install and setup nscIoTClient as a microserves container:
+# Installation instructions for [Cradlepoint router]( https://cradlepoint.com) to install and setup nscIoTClient as a microservice:
 Following instructions are providing step by step guidance to install and setup nscIOTservice for Cradlepoint router.
 ## Prerequisites for installation:
 - [x] **Cradlepoint router model [R1900](https://cradlepoint.com/product/endpoints/r1900-series/)**
