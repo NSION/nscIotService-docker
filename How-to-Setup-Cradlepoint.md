@@ -1,8 +1,9 @@
 # Installation instructions for [Cradlepoint router]( https://cradlepoint.com) to install and setup nscIoTClient as a microservice:
 Following instructions are providing step by step guidance to install and setup nscIOTservice for Cradlepoint router.
 ## Prerequisites for installation:
-- [x] **Cradlepoint router model [R1900](https://cradlepoint.com/product/endpoints/r1900-series/)**
+- [x] **Cradlepoint router model [R1900](https://cradlepoint.com/product/endpoints/r1900-series/) with an Advanced License**
 - [x] **Router is connected to network**
+- [x] **NetCloud OS (NCOS) Version 7.2.20 or newer**
 - [x] **Account for Cradlepoint [NetCloud](https://www.cradlepointecm.com/ecm.html#devices/routers)**
 - [x] **An existing account for the NSC3 organization**
 - [x] **NSC IOT key:**
@@ -16,7 +17,7 @@ Download NSC access key for the NSC3 organisation as admin-user or key-user.
 - [x] **RTSP url addresses for each of the camera sources:**
 
 The Real Time Streaming Protocol (RTSP) is a network control protocol designed for use in entertainment and communications systems to control streaming media servers. [RTSP Wiki](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol). 
-+ Ensure that DHCP is activated on camera.
++ Ensure that camera sources are accessable via Cradlepoint router.
 
 
 ## Setup environment:
