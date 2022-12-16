@@ -110,7 +110,7 @@ Following steps requires access to Cradlepoint local network.
 
 - Open Browser to address: http://<Cradlpoint gateway IP address>:8090 as example http://192.168.0.1:8090
 
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-key.png" width="780" height="320">
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-key.png" width="600" height="320">
 
 #### Connect to NSC3 server
   
@@ -119,7 +119,22 @@ Following steps requires access to Cradlepoint local network.
   
 #### Connect IP cams to nscIotClient
   
-
+- Select "Camera sources" -> "IP camera source" -> "Next"
   
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClientDevice.png" width="600" height="320">
+  
+- Define name, rtsp address and required credentials for camera.
+  
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-rtsp.png" width="600" height="320">
 
+#### Start broadcasting NSC3 server
+
+- Activate broadcasting to NSC3 server (Local view)
+  
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-localview.png" width="600" height="320">
+  
+- Verify results on NSC3 Web UI (Remove view)
+  
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-backend.png" width="600" height="320">
+  
   
