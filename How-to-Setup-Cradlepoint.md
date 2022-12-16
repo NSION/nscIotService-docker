@@ -98,8 +98,8 @@ volumes:
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint10.png" width="780" height="320">
 
-- Container pulling process and initialization will take roughly 5-10 mins. 
-- Container status running means that container is up and running without errors.
+- Container pulling process and initialization phase will take roughly 5-10 mins. 
+- Container status "running" means that nscIotService is up and running without errors.
 
 ## Configure NSC3 access via local nscIoTClient manager
 
@@ -109,5 +109,17 @@ Following steps requires access to Cradlepoint local network.
 ### Open nscIoTClient local manager
 
 - Open Browser to address: http://<Cradlpoint gateway IP address>:8090 as example http://192.168.0.1:8090
+
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-key.png" width="780" height="320">
+
+#### Connect to NSC3 server
   
+- Upload the NSC3 iotkey file. 
+- When connection status gets green color -> nscIotClient is connected to NSC3 server.
+  
+#### Connect IP cams to nscIotClient
+  
+
+  
+
   
