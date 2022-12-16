@@ -108,7 +108,7 @@ Following steps requires access to Cradlepoint local network.
 
 ### Open nscIoTClient local manager
 
-- Open Browser to address: http://<Cradlpoint gateway IP address>:8090 as example http://192.168.0.1:8090
+- Open Browser to address: http://Cradlpoint_gateway_IP_address:8090 as example http://192.168.0.1:8090
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-key.png" width="600" height="320">
 
