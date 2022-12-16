@@ -71,7 +71,7 @@ volumes:
 
 #### 6. Project configuration: Compose builder
 
-- Select "Network" / "Primary LAN" and click "Save"
+- Select "Network" -> "Primary LAN" and click "Save"
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint7.png" width="420" height="420">
 
@@ -81,11 +81,12 @@ volumes:
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint8.png" width="420" height="420">
 
-#### 8. Commit changes 
 
-- Select "Network" / "Primary LAN" and click "Save"
+- "Save" changes 
 
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint9.png" width="420" height="420">
+#### 8. Edit Configuration: System→Container→Project 
+
+- Click "Commit changes"
 
 #### 9. Check status of container deployment
 
