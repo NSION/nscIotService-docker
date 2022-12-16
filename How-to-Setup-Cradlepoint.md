@@ -5,18 +5,9 @@ Following instructions are providing step by step guidance to install and setup 
 - [x] **Router is connected to network**
 - [x] **Account for Cradlepoint [NetCloud](https://www.cradlepointecm.com/ecm.html#devices/routers)**
 - [x] **An existing account for the NSC3 organization**
-
-Below list is collecting detailed guidelines for several OS to install Docker
-
-+ [Windows](https://docs.docker.com/docker-for-windows/install-windows-home/)
-+ [MAC](https://docs.docker.com/docker-for-mac/install/)
-+ [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-+ [docker-compose](https://docs.docker.com/compose/install/)
-+ [Raspberry Pi4](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
-
 - [x] **NSC IOT key:**
 
-Download the corresponding Nsc IoT key from the NSC3 organisation as admin-user or key-user.
+Download NSC access key for the NSC3 organisation as admin-user or key-user.
 
 + Login to NSC3 Web UI admin panel as admin or key user
 + Select the targeted organization and click "arrow down" icon
