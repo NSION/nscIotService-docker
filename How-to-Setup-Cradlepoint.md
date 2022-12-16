@@ -47,6 +47,27 @@ The Real Time Streaming Protocol (RTSP) is a network control protocol designed f
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint5.png" width="420" height="324">
 
+- Copy and paste following confuguration to "Compose" editor and click "Compose" tab
+
+    version: '2.4'
+    services:
+      nsciotservice:
+        network_mode: bridge
+        image: 'nsiontech/nsciotservice:quarkus-arm64'
+        command: ''
+        entrypoint: /deployments/run-java.sh
+        working_dir: ''
+        user: ''
+        logging:
+          driver: json-file
+          options: {}
+        ports:
+          - '8090:8090'
+        volumes:
+          - 'nsciot-volume:/deployments/statedb'
+    volumes:
+      nsciot-volume:
+        driver: local
 
 #### 7. Project configuration: Compose
 
