@@ -49,6 +49,7 @@ The Real Time Streaming Protocol (RTSP) is a network control protocol designed f
 
 - Copy and paste following confuguration to "Compose" editor and click "Compose" tab
 
+```text 
 version: '2.4'
 services:
   nsciotservice:
@@ -68,6 +69,7 @@ services:
 volumes:
   nsciot-volume:
     driver: local
+```text 
 
 #### 7. Project configuration: Compose
 
