@@ -1,4 +1,4 @@
-# Installation instructions for [Cradlepoint router]( https://cradlepoint.com) to install and setup nscIoTClient as a microservice:
+# Installation instructions for [Cradlepoint router]( https://cradlepoint.com) to install and setup nscIoTClient as container:
 Following instructions are providing step by step guidance to install and setup nscIOTservice for Cradlepoint router.
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint-NSC3.png" width="680" height="324">
