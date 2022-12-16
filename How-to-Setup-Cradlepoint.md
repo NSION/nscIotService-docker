@@ -94,9 +94,11 @@ volumes:
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint9.png" width="620" height="220">
 
-- Container pulling process and initialization will take roughly 5-10 mins. 
+- Select
 
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint10.png" width="620" height="420">
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint10.png" width="680" height="320">
+
+- Container pulling process and initialization will take roughly 5-10 mins. 
 
 ## Configure NSC3 via local nscIoTClient manager
 
