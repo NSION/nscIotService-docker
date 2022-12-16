@@ -69,9 +69,32 @@ volumes:
     driver: local
 ```
 
-#### 7. Project configuration: Compose builder
+#### 6. Project configuration: Compose builder
 
-- Select "nsc3" for a Container project name and click "Save"
+- Select "Network" / "Primary LAN" and click "Save"
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint7.png" width="420" height="420">
 
+#### 7. Project configuration: Compose 
+
+- Expose container port "8090" to your gateway IP address as below example "192.168.0.1:8090:8090". Ensure your GW IP address, Reference -> Network parameteres on Compose configuration 
+
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint8.png" width="420" height="420">
+
+#### 8. Commit changes 
+
+- Select "Network" / "Primary LAN" and click "Save"
+
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint9.png" width="420" height="420">
+
+#### 9. Check status of container deployment
+
+- Select 
+
+- Container pulling process and initialization will take roughly 5-10 mins. 
+
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint10.png" width="420" height="420">
+
+## Configure NSC3 via local nscIoTClient manager
+
+### 
