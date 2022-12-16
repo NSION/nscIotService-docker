@@ -37,7 +37,7 @@ The Real Time Streaming Protocol (RTSP) is a network control protocol designed f
 
 #### 4. Project configuration: Config
 
-- Select "nsc3" for a Container project name and click "Compose" tab
+- Select "nsc3" as a name for a Container project and click "Compose" tab
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint3.png" width="420" height="420">
 
