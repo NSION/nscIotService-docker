@@ -39,16 +39,15 @@ The Real Time Streaming Protocol (RTSP) is a network control protocol designed f
 
 - Select "nsc3" for a Container project name and click "Compose" tab
 
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint3.png" width="420" height="324">
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint3.png" width="420" height="420">
 
 #### 5. Project configuration: Compose
 
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint5.png" width="420" height="324">
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint5.png" width="420" height="420">
 
-- Copy and paste following confuguration to "Compose" editor and click "Compose builder" tab
+- Copy and paste following configuration to "Compose" editor and click "Compose builder" tab
 
 ```
-
 version: '2.4'
 services:
   nsciotservice:
@@ -68,12 +67,11 @@ services:
 volumes:
   nsciot-volume:
     driver: local
-
 ```
 
 #### 7. Project configuration: Compose builder
 
-- Select "nsc3" for a Container project name and click again "Compose" tab
+- Select "nsc3" for a Container project name and click "Save"
 
-<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint4.png" width="420" height="324">
+<img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint7.png" width="420" height="420">
 
