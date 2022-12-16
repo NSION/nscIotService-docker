@@ -7,7 +7,7 @@ Following instructions are providing step by step guidance to install and setup 
 - [x] **Cradlepoint router model [R1900](https://cradlepoint.com/product/endpoints/r1900-series/) with an Advanced License**
 - [x] **Router is connected to network**
 - [x] **NetCloud OS (NCOS) Version 7.2.20 or newer**
-- [x] **Account for Cradlepoint [NetCloud](https://www.cradlepointecm.com/ecm.html#devices/routers)**
+- [x] **Account for Cradlepoint [NetCloud](https://www.cradlepointecm.com/ecm.html#devices/routers) **
 - [x] **An existing account for the NSC3 organization**
 - [x] **NSC IOT key:**
 
@@ -23,7 +23,7 @@ The Real Time Streaming Protocol (RTSP) is a network control protocol designed f
 + Ensure that camera sources are accessable via Cradlepoint router.
 
 ## Install NSC3 container to Cradlepoint router
-- Login to NetCloud https://www.cradlepointecm.com/ecm.html#devices/routers
+- Login to [NetCloud](https://www.cradlepointecm.com/ecm.html#devices/routers)
 - Devices: Select your Router device and click EDIT
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/Cradlepoint1.png" width="420" height="324">
 - Edit Configuration: Configure your container SYSTEM→CONTAINER→PROJECT. Select "Add" 
