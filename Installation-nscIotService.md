@@ -343,28 +343,24 @@ Shutdown and removing IoTClient containers:
 
 ```
 sudo docker-compose down
-  
 ```
   
 Removing unused Docker Images:  
 
 ```
-sudo docker image prune
-  
+sudo docker image prune 
 ```
   
 Removing all unused network:
   
 ```
 sudo docker network prune
-  
 ```
   
 Removing all unused volumes:
   
 ```
 sudo docker volume prune
-  
 ```
   
 ## [nscIotService API spec:](https://github.com/NSION/nscIotService-emergency-button#api-specifications)
