@@ -335,4 +335,24 @@ Note that changes will be affected when remove the ```#``` at the beginning of t
 # --- Picture height size 240pix as example
 #IOT_SERVICE_LIVE_FRAME_HEIGHT_KEY=240
 ```
-### [nscIotService API spec:](https://github.com/NSION/nscIotService-emergency-button#api-specifications)
+
+  
+## Remove NSCIoTClient from linux
+  
+Shutdown and removing IoTClient containers:
+
+```sudo docker-compose down```
+  
+Removing unused Docker Images:  
+
+```sudo docker image prune```
+  
+Removing all unused network:
+  
+```sudo docker network prune```
+  
+Removing all unused volumes:
+  
+```sudo docker volume prune```
+  
+## [nscIotService API spec:](https://github.com/NSION/nscIotService-emergency-button#api-specifications)
