@@ -341,18 +341,30 @@ Note that changes will be affected when remove the ```#``` at the beginning of t
   
 Shutdown and removing IoTClient containers:
 
-```sudo docker-compose down```
+```
+sudo docker-compose down
+  
+```
   
 Removing unused Docker Images:  
 
-```sudo docker image prune```
+```
+sudo docker image prune
+  
+```
   
 Removing all unused network:
   
-```sudo docker network prune```
+```
+sudo docker network prune
+  
+```
   
 Removing all unused volumes:
   
-```sudo docker volume prune```
+```
+sudo docker volume prune
+  
+```
   
 ## [nscIotService API spec:](https://github.com/NSION/nscIotService-emergency-button#api-specifications)
