@@ -15,7 +15,8 @@ Instructions for several Docker runtime environments
 - [x] Docker and docker-compose are installed
 - [x] Existing account for NSC3 services
 - [x] NSC3 specific iot-key for backend authentication
-- [x] Recommended OS: Ubuntu 18.04 LTS or later.
+- [x] Recommended OS: Ubuntu 20.04 LTS or later.
+- [x] 64-bits operating system
 
 ## Installation instructions:
 - [Installation of nscIotService:](https://github.com/NSION/nscIotService-docker/blob/main/Installation-nscIotService.md)
