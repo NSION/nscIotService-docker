@@ -1,6 +1,8 @@
 # Installation instructions for arm64 based devices:
 Following instructions are providing step by step guidance to install and setup nscIOTservice for arm64 based devices, like Raspberry-Pi.
 
+NOTE: IP camera and NSC backend configuration via local Web Console is only available.
+
 ## Prerequisites for installation:
 - [x] arm64 Linux Operating system is installed to device
 - [x] Docker (with Docker compose) is installed to device
