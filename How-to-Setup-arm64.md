@@ -7,9 +7,9 @@ NOTE: IP camera and NSC backend configuration via local Web Console is only avai
 - [x] **arm64 Linux Operating system is installed to device**
 - [x] **Docker (with Docker compose) is installed to device**
 - [x] **GIT is installed to device**
-- [x] **An existing account for the NSC3 organization**
-- [x] **NSC IOT key file downloaded to target organization**
 - [x] **Access to Device IP address via HTTP is enabled**
+- [x] **An existing account for the NSC3 organization**
+- [x] **NSC IOT key file downloaded to target organization:**
 
 Download NSC access key for the NSC3 organisation as admin-user or key-user.
 
