@@ -21,8 +21,12 @@ Instructions for several Docker runtime environments
 ## Installation instructions:
 - [Installation of nscIotService:](https://github.com/NSION/nscIotService-docker/blob/main/Installation-nscIotService.md)
 - [Docker installation for Raspberry Pi](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
-- [Cradlepoint router](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-Cradlepoint.md)
-- [Configuring NSC IoTClient for 64-bits Raspberry-Pi (arm64)](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-arm64.md).
+- [Configuring NSC IoTClient docker version for Cradlepoint router](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-Cradlepoint.md)
+- [Configuring NSC IoTClient docker version for 64-bits ARM devices, Like Mac M2 and Raspberry-Pi (arm64)](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-arm64.md).
+
+## Alternative installation: 
+### Windows installation (Native Windows app without docker):
+- [Downdloadable zip package for Windows NSCIoTClient (Application with installation instructions)](https://nscdevstorage.blob.core.windows.net/iotclientbundle/nsc-iot-client-bundle.zip)
 
 ## NSC3 Overview
 
@@ -63,10 +67,10 @@ More information about NSC3 platforms:
 
 ### Components for nscIotService container:
 - Docker images is based on Debian-slim repositories.
-- OpenJDK 11
+- OpenJDK
 - FFMPEG & dependency libraries for docker image
 - Video-for-linux services v4l2-util
-- Apache Tomcat
+- Apache Tomcat / Quarkus Java runtime
 - NSCIotClient application
 
 ### nscIotService Docker architecture:
