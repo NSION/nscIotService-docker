@@ -2,12 +2,12 @@
 Following instructions are providing step by step guidance to install and setup nscIOTservice for arm64 based devices, like Raspberry-Pi.
 
 ## Prerequisites for installation:
-- [x] **ARM64 Linux Operating system is installed to device
-- [x] **Docker (with Docker compose) is installed to device
-- [x] **GIT is installed to device
-- [x] **An existing account for the NSC3 organization**
-- [x] **NSC IOT key:**
-- [x] **Access to Device IP address via HTTP is enabled 
+- [x] arm64 Linux Operating system is installed to device
+- [x] Docker (with Docker compose) is installed to device
+- [x] GIT is installed to device
+- [x] An existing account for the NSC3 organization**
+- [x] NSC IOT key:**
+- [x] Access to Device IP address via HTTP is enabled 
 
 Download NSC access key for the NSC3 organisation as admin-user or key-user.
 
