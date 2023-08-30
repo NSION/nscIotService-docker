@@ -22,6 +22,7 @@ Instructions for several Docker runtime environments
 - [Installation of nscIotService:](https://github.com/NSION/nscIotService-docker/blob/main/Installation-nscIotService.md)
 - [Docker installation for Raspberry Pi](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
 - [Cradlepoint router](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-Cradlepoint.md)
+- [Configuring NSC IoTClient for 64-bits Raspberry-Pi (arm64)](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-arm64.md).
 
 ## NSC3 Overview
 
