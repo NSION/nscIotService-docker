@@ -1,7 +1,9 @@
 version: '2.4'
 services:
   nsciotservice:
-    network_mode: bridge
+    networks:
+      nsciot-network:
+        ipv4_address: 172.21.0.10
     image: 'nsiontech/nsciotservice:quarkus-arm64'
     command: ''
     entrypoint: /deployments/run-java.sh
