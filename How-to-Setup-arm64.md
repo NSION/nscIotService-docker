@@ -1,5 +1,5 @@
 # Installation instructions for arm64 based devices:
-Following instructions are providing step by step guidance to install and setup nscIOTservice for arm64 based devices, like Raspberry-Pi.
+Following instructions are providing step by step guidance to install and setup nscIOTservice for linux/arm64 based devices, like Raspberry-Pi, MAC M2, etc. Note that this is not compliant with operating systems that based on linux/aarch64 or linux/arm64v8 architecture.
 
 NOTE: IP camera and NSC backend configuration via local Web Console is only available.
 
