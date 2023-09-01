@@ -5,7 +5,7 @@ Verified with Ubuntu based OS.
 NOTE: IP camera and NSC backend configuration via local Web Console is only available.
 
 ## Prerequisites for installation:
-- [x] **linux/amd64 Operating system is installed to device/server**
+- [x] **linux/amd64 based operating system is installed to device/server**
 - [x] **Docker (with Docker compose) is installed to device/server**
 
 Below list is collecting detailed guidelines for per OS to install Docker and docker-compose
