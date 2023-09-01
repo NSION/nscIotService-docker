@@ -6,6 +6,11 @@ NOTE: IP camera and NSC backend configuration via local Web Console is only avai
 ## Prerequisites for installation:
 - [x] **linux/arm64 Operating system is installed to device/server**
 - [x] **Docker (with Docker compose) is installed to device/server**
+Below list is collecting detailed guidelines for per OS to install Docker and docker-compose
++ [Windows](https://docs.docker.com/docker-for-windows/install-windows-home/)
++ [MAC](https://docs.docker.com/docker-for-mac/install/)
++ [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
++ [docker-compose](https://docs.docker.com/compose/install/)
 - [x] **GIT is installed to device/server**
 - [x] **Access to Device IP address via HTTP is enabled**
 - [x] **Account for the NSC3 organization, at least keyuser level user rights for organisation is required to allow downloading iotkey file**
