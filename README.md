@@ -7,9 +7,10 @@ This is a microservice based SW deployment specific repository for a NSC IoT cli
 - [x] At least 4Cores / 4GB RAM on edge computer
 - [x] Docker and docker-compose are installed
 - [x] Existing account for NSC services
-- [x] NSC3 specific iot-key for backend authentication
+- [x] NSC specific iot-key for authentication
 - [x] Recommended OS: Ubuntu latest LTS, 64-bits operating system
 - [x] Access to Device IP address via HTTP is enabled
+
 
 ## Installation instructions:
 - [Docker installation for Raspberry Pi:](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
