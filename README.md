@@ -3,19 +3,12 @@
 This is a microservice based SW deployment specific repository for a NSC3 IoT client developed by NSION technologies Ltd.
 - Instructions and scripts to setup container based nscIotService on edge computer node. Support for serveral RTSP based IP camera sources.
 
-Instructions for several Docker runtime environments
-- Windows OS with Docker
-- MacOS with Docker
-- Linux with Docker
-- Raspberry Pi 4 (Dedicated instruction to configure Docker on top of Raspberry Pi 4)
-
 **Prerequisites for installation:**
 - [x] At least 4Cores / 4GB RAM on edge computer
 - [x] Docker and docker-compose are installed
 - [x] Existing account for NSC3 services
 - [x] NSC3 specific iot-key for backend authentication
-- [x] Recommended OS: Ubuntu latest LTS.
-- [x] 64-bits operating system
+- [x] Recommended OS: Ubuntu latest LTS, 64-bits operating system 
 
 ## Installation instructions:
 - [Docker installation for Raspberry Pi:](https://github.com/NSION/nscIotService-docker/blob/main/Installation-Raspberry-Pi.md)
@@ -65,10 +58,3 @@ More information about NSC3 platforms:
 - [NSION Ltd - Contact information](https://www.nsiontec.com/company/contact/)
 - [nscIotService API spec](https://github.com/NSION/nscIotService-emergency-button#api-specifications)
 
-### Components for nscIotService container:
-- Docker images is based on Debian-slim repositories.
-- OpenJDK
-- FFMPEG & dependency libraries for docker image
-- Video-for-linux services v4l2-util
-- Apache Tomcat / Quarkus Java runtime
-- NSCIotClient application 
