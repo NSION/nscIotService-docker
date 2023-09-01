@@ -93,6 +93,7 @@ cd ~/nscIotService-docker
 sudo docker-compose -f docker-compose-arm64.yml down
 sudo docker-compose -f docker-compose-arm64.yml pull
 sudo docker-compose -f docker-compose-arm64.yml up -d
+```
 
 ## Remove NSCIoTClient from linux
   
