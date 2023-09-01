@@ -1,0 +1,28 @@
+version: '2.4'
+services:
+  nsciotservice:
+    networks:
+      nsciot-network:
+        ipv4_address: 172.21.0.10
+    image: 'nsiontech/nsciotservice:quarkus-amd64'
+    command: ''
+    entrypoint: /deployments/run-java.sh
+    working_dir: ''
+    user: ''
+    logging:
+      driver: json-file
+      options: {}
+    ports:
+      - '8090:8090'
+    volumes:
+      - 'nsciot-volume:/deployments/statedb'
+volumes:
+  nsciot-volume:
+    driver: local
+networks:
+    nsciot-network:
+      driver: bridge
+      ipam:
+        driver: default
+        config:
+          - subnet: 172.21.0.0/24
