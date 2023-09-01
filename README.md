@@ -19,7 +19,7 @@ This is a microservice based SW deployment specific repository for a NSC3 IoT cl
 
 ## Alternative installation: 
 ### Windows installation (Native Windows app without docker):
-- [Downdloadable zip package for Windows NSCIoTClient (Application with installation instructions)](https://nscdevstorage.blob.core.windows.net/iotclientbundle/nsc-iot-client-bundle.zip)
+- [Downloadable zip package for Windows NSCIoTClient (Application with installation instructions)](https://nscdevstorage.blob.core.windows.net/iotclientbundle/nsc-iot-client-bundle.zip)
 
 ## NSC3 Overview
 
