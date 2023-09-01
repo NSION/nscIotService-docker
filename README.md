@@ -15,7 +15,7 @@ Instructions for several Docker runtime environments
 - [x] Docker and docker-compose are installed
 - [x] Existing account for NSC3 services
 - [x] NSC3 specific iot-key for backend authentication
-- [x] Recommended OS: Ubuntu 20.04 LTS or later.
+- [x] Recommended OS: Ubuntu latest LTS.
 - [x] 64-bits operating system
 
 ## Installation instructions:
@@ -72,8 +72,4 @@ More information about NSC3 platforms:
 - FFMPEG & dependency libraries for docker image
 - Video-for-linux services v4l2-util
 - Apache Tomcat / Quarkus Java runtime
-- NSCIotClient application
-
-### nscIotService Docker architecture:
-![nscIotService Docker architecture](https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotService-docker.png)
-Above architecture diagram describes container interfaces to serve 4 dedicated video sources. 
+- NSCIotClient application 
