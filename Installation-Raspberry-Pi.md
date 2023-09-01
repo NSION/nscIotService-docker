@@ -4,7 +4,7 @@ The software is popular among developers as it speeds up the development process
 Docker containers are lightweight, especially compared to virtual machines. This feature is especially valuable if you are a Raspberry Pi user.
 ## Prerequisites:
 - Raspberry Pi 4 / 4GB RAM
-- Raspberry Pi with a running Rasbian OS (Debian based OS)
+- Raspberry Pi with a running Ubuntu linux/arm64 OS is recommended
 ## Instructions to setup Raspberry SD card
 - SSH connection enabled 
 - Instruction to enable remote ssh connection
