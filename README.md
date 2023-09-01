@@ -2,7 +2,6 @@
 
 This is a microservice based SW deployment specific repository for a NSC3 IoT client developed by NSION technologies Ltd.
 - Instructions and scripts to setup container based nscIotService on edge computer node. Support for serveral RTSP based IP camera sources.
-- Container registry is located on [Dockerhub](https://hub.docker.com/repository/docker/nsiontech/nsciotservice) 
 
 Instructions for several Docker runtime environments
 - Windows OS with Docker
