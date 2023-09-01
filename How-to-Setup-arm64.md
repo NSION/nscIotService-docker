@@ -1,14 +1,14 @@
 # Installation instructions for arm64 based devices:
-Following instructions are providing step by step guidance to install and setup nscIOTservice for linux/arm64 based devices, like Raspberry-Pi, MAC M2, etc. Note that this is not compliant with operating systems that based on linux/aarch64 or linux/arm64v8 architecture.
+Following instructions are providing step by step guidance to install and setup nscIOTservice for linux/arm64 based devices, like Raspberry-Pi, MAC M2, etc. Note that this is not compliant with operating systems that based on linux/aarch64 nor linux/arm64v8 architecture.
 
 NOTE: IP camera and NSC backend configuration via local Web Console is only available.
 
 ## Prerequisites for installation:
-- [x] **arm64 Linux Operating system is installed to device**
-- [x] **Docker (with Docker compose) is installed to device**
-- [x] **GIT is installed to device**
+- [x] **linux/arm64 Operating system is installed to device/server**
+- [x] **Docker (with Docker compose) is installed to device/server**
+- [x] **GIT is installed to device/server**
 - [x] **Access to Device IP address via HTTP is enabled**
-- [x] **An existing account for the NSC3 organization**
+- [x] **Account for the NSC3 organization, at least keyuser level user rights for organisation is required to allow downloading iotkey file**
 - [x] **NSC IOT key file downloaded to target organization:**
 
 Download NSC access key for the NSC3 organisation as admin-user or key-user.
@@ -74,4 +74,50 @@ Following steps requires access to Cradlepoint local network.
   
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-backend.png" width="600" height="320">
   
+## Basic operations:
+### Shutdown nscIotService:
+```text
+cd ~/nscIotService-docker
+sudo docker-compose -f docker-compose-arm64.yml down
+```
+
+### Start up nscIotService:
+```text
+cd ~/nscIotService-docker
+sudo docker-compose -f docker-compose-arm64.yml up -d
+```
+
+### Upgrade nscIotService:
+```text
+cd ~/nscIotService-docker
+sudo docker-compose -f docker-compose-arm64.yml down
+sudo docker-compose -f docker-compose-arm64.yml pull
+sudo docker-compose -f docker-compose-arm64.yml up -d
+
+## Remove NSCIoTClient from linux
   
+Shutdown and removing IoTClient containers:
+
+```
+sudo docker-compose -f docker-compose-arm64.yml down
+```
+  
+Removing unused Docker Images:  
+
+```
+sudo docker image prune 
+```
+  
+Removing all unused network:
+  
+```
+sudo docker network prune
+```
+  
+Removing all unused volumes:
+  
+```
+sudo docker volume prune
+```
+  
+## [nscIotService API spec:](https://github.com/NSION/nscIotService-emergency-button#api-specifications)
