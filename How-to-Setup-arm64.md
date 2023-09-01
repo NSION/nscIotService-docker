@@ -4,7 +4,7 @@ Following instructions are providing step by step guidance to install and setup 
 NOTE: IP camera and NSC backend configuration via local Web Console is only available.
 
 ## Prerequisites for installation:
-- [x] **linux/arm64 Operating system is installed to device/server**
+- [x] **linux/arm64 based operating system is installed to device/server**
 - [x] **Docker (with Docker compose) is installed to device/server**
 
 Below list is collecting detailed guidelines for per OS to install Docker and docker-compose
