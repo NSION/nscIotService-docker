@@ -28,7 +28,7 @@ Download NSC access key for the NSC3 organisation as admin-user or key-user.
 - [x] **RTSP url addresses for each of the camera sources:**
 
 The Real Time Streaming Protocol (RTSP) is a network control protocol designed for use in entertainment and communications systems to control streaming media servers. [RTSP Wiki](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol). 
-+ Ensure that camera sources are accessable via Cradlepoint router.
++ Ensure that camera sources are accessable. You could validate rtsp stream by e.g VLC Player.
 
 ## Install NSC3 container 
 
