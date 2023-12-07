@@ -17,7 +17,7 @@ This is a microservice based SW deployment specific repository for a NSC IoT cli
 - [Configuring NSC IoTClient docker version for Cradlepoint router:](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-Cradlepoint.md)
 - [Configuring NSC IoTClient docker version for 64-bits ARM devices (linux/arm64):](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-arm64.md)
 - [Configuring NSC IoTClient docker version for 64-bits AMD devices (linux/amd64):](https://github.com/NSION/nscIotService-docker/blob/main/How-to-Setup-amd64.md)
-- [Installation of nscIotService (Old CLI management):](https://github.com/NSION/nscIotService-docker/blob/main/Installation-nscIotService.md)
+- [Installation of older nscIotService version (CLI management):](https://github.com/NSION/nscIotService-docker/blob/main/Installation-nscIotService.md)
 
 ## Alternative installation: 
 ### Windows installation (Native Windows app without docker):
