@@ -4,7 +4,7 @@ services:
     networks:
       nsciot-network:
         ipv4_address: 172.21.0.10
-    image: 'nsiontech/nsciotservice:amd64-release-4.0'
+    image: 'nsiontech/nsciotservice:amd64-release-3.14'
     command: ''
     entrypoint: /deployments/run-java.sh
     working_dir: ''
