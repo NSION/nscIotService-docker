@@ -1,5 +1,7 @@
 # Install nscIotService:
+
 Note that this version of nscIoTClient is old and out of maintenance. We recommend to use latest versions instead.
+
 Following instructions are providing instructions to build the docker image locally and push it to local docker registry.
 Note: Following instructions are designed for older commandline (CLI) based configuration management. New versions are based on Web console configuration.
 
