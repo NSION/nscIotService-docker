@@ -45,14 +45,14 @@ cd ~/nscIotService-docker
 sudo docker-compose -f docker-compose-arm64.yml up -d
 ```
 
-## Configure NSC access via local nscIoTClient manager
+## Configure NSC access via local nscIoTClient manager (Web UI)
 
-Following steps requires access to Cradlepoint local network. 
+Following steps requires access to local network. 
 
 
 ### Open nscIoTClient local manager
 
-- Open Browser to address: arm-device_IP_address:8090 as example http://192.168.0.100:8090
+- Open Browser to address: device_IP_address:8090 as example http://192.168.0.100:8090 or http://localhost:8090
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-key.png" width="600" height="320">
 
