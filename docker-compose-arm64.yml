@@ -16,6 +16,7 @@ services:
       - '8090:8090'
     volumes:
       - 'nsciot-volume:/deployments/statedb'
+      - '$PWD/iotconfig:/deployments/legacy'
 volumes:
   nsciot-volume:
     driver: local
