@@ -87,7 +87,7 @@ Following steps requires access to local network.
   
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-backend.png" width="600" height="320">
 
-### Managed nscIoTClient CLI tool (nscIoTClient-CLI.sh)
+### Managed nscIoTClient with CLI tool (nscIoTClient-CLI.sh)
 
 ```text 
 Usage: nscIoTClient-CLI.sh [OPTIONS] COMMAND [ARGS]
