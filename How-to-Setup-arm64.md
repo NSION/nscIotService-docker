@@ -49,23 +49,23 @@ touch ./iotconfig/nscIoTConf.env
 sudo docker-compose -f docker-compose-arm64.yml up -d
 ```
 
-## Configure NSC access via local nscIoTClient manager (Web UI)
+## Configure NSC access via local nscIoTClient manager or command line tool (CLI)
 
 Following steps requires access to local network. 
 
 
-### Open nscIoTClient local manager
+### Open nscIoTClient local manager (Web UI)
 
 - Open Browser to address: device_IP_address:8090 as example http://192.168.0.100:8090 or http://localhost:8090
 
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-key.png" width="600" height="320">
 
-#### Connect to NSC3 server
+#### Connect to NSC3 server (Web UI)
   
 - Upload the NSC3 iotkey file. 
 - When connection status gets green color -> nscIotClient is connected to NSC3 server.
   
-#### Connect IP cams to nscIotClient
+#### Connect IP cams to nscIotClient (Web UI)
   
 - Select "Camera sources" -> "IP camera source" -> "Next"
   
@@ -75,7 +75,7 @@ Following steps requires access to local network.
   
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-rtsp.png" width="500" height="320">
 
-#### Start broadcasting to NSC3 server
+#### Start broadcasting to NSC3 server (Web UI)
 
 - Activate broadcasting to NSC3 server (Local view)
   
@@ -84,7 +84,41 @@ Following steps requires access to local network.
 - Verify results on NSC3 Web UI (Remove view)
   
 <img src="https://github.com/NSION/nscIotService-docker/blob/main/pictures/nscIotClient-backend.png" width="600" height="320">
-  
+
+### Managed nscIoTClient CLI tool (nscIoTClient-CLI.sh)
+
+```text 
+Usage: nscIoTClient-CLI.sh [OPTIONS] COMMAND [ARGS]
+
+Options:
+  -h, --help        Show this help message and exit
+
+Commands:
+  status            nscIoTClient status
+  list              List of streaming devices
+  add               Add new streaming sources
+    Arguments:      e.g 'add -name testcam -url rtsp://test.com:554 -u test -p mypass'
+    -name           Name of stream source 
+    -url            URL address for streaming port 
+    -u              Camera user authentication: user. If no user credentials then -u '' 
+    -p              Camera user authentication: password. If no passwd credentials then -p '' 
+  remove            Remove streaming source
+    Arguments:      e.g 'remove -sourceID 4911a9a5-f6af-4ee0-aa50-75e61f9d67c9'
+    -sourceID       ID of stream source, list of streaming sources by 'list' command
+  iotkey            Add or update new iot-key
+    Arguments:      e.g 'iotkey -location /home/ubuntu/test.nsc.iot'
+    -location       Location and file name of iotkey
+  control           Start/Stop video stream
+    Arguments:      e.g 'control -sourceID 4911a9a5-f6af-4ee0-aa50-75e61f9d67c9 start'
+    -sourceID       ID of stream source, list of streaming sources by 'list' command
+    start/stop      options: start or stop
+  optimize          Optimize video quality. Options value or default. Argument 'default' means no-changes
+    Arguments:      e.g (only fps) 'optimize -fps 10 -framewidth default -frameheight default'
+    -fps            Frames per second, 'default' as camera source, usually value '25'
+    -framewidth     FRAME_WIDTH, 'default' as camera source, HD(p720) e.g '1280'
+    -frameheight    FRAME_HEIGHT, 'default' as camera source, HD(p720) e.g '720'
+```
+ 
 ## Basic operations:
 ### Shutdown nscIotService:
 ```text
