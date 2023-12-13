@@ -43,6 +43,8 @@ git clone https://github.com/NSION/nscIotService-docker.git
 
 ```text 
 cd ~/nscIotService-docker
+mkdir iotconfig
+touch ./iotconfig/nscIoTConf.env
 sudo docker-compose -f docker-compose-amd64.yml up -d
 ```
 
