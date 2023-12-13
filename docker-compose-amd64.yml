@@ -7,6 +7,9 @@ services:
     image: 'nsiontech/nsciotservice:amd64-release-3.14'
     command: ''
     entrypoint: /deployments/run-java.sh
+    env_file:
+        - $PWD/iotconfig/nscIoTConf.env
+    restart: unless-stopped
     working_dir: ''
     user: ''
     logging:
