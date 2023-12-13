@@ -44,6 +44,7 @@ git clone https://github.com/NSION/nscIotService-docker.git
 
 ```text 
 cd ~/nscIotService-docker
+chmod u+x *.sh
 mkdir iotconfig
 touch ./iotconfig/nscIoTConf.env
 sudo docker-compose -f docker-compose-arm64.yml up -d
@@ -118,7 +119,24 @@ Commands:
     -framewidth     FRAME_WIDTH, 'default' as camera source, HD(p720) e.g '1280'
     -frameheight    FRAME_HEIGHT, 'default' as camera source, HD(p720) e.g '720'
 ```
- 
+#### Configurable runtime settings of nscIoTClient CLI tool (nscIoTClient-CLI.sh)
+
+Runtime configurability is defined in the shell script nscIoTClient-CLI.sh
+
+```text
+cd ~/nscIotService-docker
+nano nscIoTClient-CLI.sh
+```
+```text
+...
+# Runtime parameters
+IOTHOSTNAME="localhost" # Default is localhost, if something else modify your IoTClient domain address here
+IOTPORT="8090" # Default is 8090, if something else modify your IoTClient port here
+TIMESTAMP=$(date +%Y%m%d%H%M)
+SUDO=false  # If docker requires sudo grants then set this env. variable to true
+...
+```
+
 ## Basic operations:
 ### Shutdown nscIotService:
 ```text
