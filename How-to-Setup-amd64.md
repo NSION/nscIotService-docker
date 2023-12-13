@@ -33,8 +33,10 @@ The Real Time Streaming Protocol (RTSP) is a network control protocol designed f
 ## Install NSC3 container 
 
 #### 1. Login to arm device via ssh
-#### 2. Clone the git project
-
+#### 2. Add additional tools and clone the git project
+```text
+sudo apt install curl jq git
+```
 ```text 
 cd ~
 git clone https://github.com/NSION/nscIotService-docker.git
