@@ -90,6 +90,7 @@ function remove() {
     echo "Executing remove command with arguments: '$@'"
     if  [ $1 == "-sourceID" ]; then SOURCEID=$2; else invalid $@; exit 1; fi
     # echo "remove syntax ok: $SOURCEID" 
+    STOP=$(curl -X POST http://$IOTHOSTNAME:$IOTPORT/inputsource/$SOURCEID/stop 2> /dev/null)
     FEEDBACK=$(curl -X DELETE http://$IOTHOSTNAME:$IOTPORT/inputsource/$SOURCEID 2> /dev/null)
     echo $FEEDBACK
 }
