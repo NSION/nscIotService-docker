@@ -47,6 +47,7 @@ cd ~/nscIotService-docker
 chmod u+x *.sh
 mkdir iotconfig
 touch ./iotconfig/nscIoTConf.env
+ln -s docker-compose-arm64.yml docker-compose.yml
 sudo docker-compose -f docker-compose-arm64.yml up -d
 ```
 
