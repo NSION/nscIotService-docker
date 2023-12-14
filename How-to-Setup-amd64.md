@@ -32,7 +32,7 @@ The Real Time Streaming Protocol (RTSP) is a network control protocol designed f
 
 ## Install NSC3 container 
 
-#### 1. Login to arm device via ssh
+#### 1. Login to amd device via ssh
 #### 2. Add additional tools and clone the git project
 ```text
 sudo apt install curl jq git
