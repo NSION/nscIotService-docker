@@ -49,7 +49,7 @@ chmod u+x *.sh
 mkdir iotconfig
 touch ./iotconfig/nscIoTConf.env
 ln -s docker-compose-amd64.yml docker-compose.yml
-sudo docker-compose -f docker-compose.yml up -d
+sudo docker-compose up -d
 ```
 
 ## Configure NSC access via local nscIoTClient manager or command line tool (CLI)
