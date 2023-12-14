@@ -50,8 +50,8 @@ function status() {
     if [ -z "$IOTCONNECTIONSTATUS" ]
         IOTKEYSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/connection/access-configuration-status | jq -r '.accessConfigurationStatus')
         if [ -z "$IOTKEYSTATUS" ]
-            then echo "nscIoT Service is down. Please try to restart by docker-compose up -d"
-            else echo "Please add iotkey by 'nscIoTClient-CLI.sh iotkey' command"
+        then echo "nscIoT Service is down. Please try to restart by docker-compose up -d"
+        else echo "Please add iotkey by 'nscIoTClient-CLI.sh iotkey' command"
         fi
         else 
         echo "Connection status to NSC3 server = $IOTCONNECTIONSTATUS"
