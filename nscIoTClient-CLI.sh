@@ -47,12 +47,16 @@ function status() {
     # Add your status logic here
     export IOTCONNECTIONSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/status/streaming | jq -r '.connectionStatus')
     export IOTSTEAMINGSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/status/streaming | jq -r '.liveStreaming')
-    if [ -z "$IOTCONNECTIONSTATUS" ]
-        IOTKEYSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/connection/access-configuration-status | jq -r '.accessConfigurationStatus')
-        if [ -z "$IOTKEYSTATUS" ]; then echo "nscIoT Service is down. Please try to restart by docker-compose up -d"; else echo "Please add iotkey by 'nscIoTClient-CLI.sh iotkey' command"; fi
+    export IOTKEYSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/connection/access-configuration-status | jq -r '.accessConfigurationStatus')
+    if [ -z "$IOTKEYSTATUS" ]
+        echo "nscIoT Service is down. Please try to restart by docker-compose up -d"
         else 
-        echo "Connection status to NSC3 server = $IOTCONNECTIONSTATUS"
-        echo "Streaming status to NSC3 server = $IOTSTEAMINGSTATUS"
+        if [ $IOTKEYSTATUS != "SUCCESS" ]
+            echo "Please add iotkey by 'nscIoTClient-CLI.sh iotkey' command"
+            else
+            echo "Connection status to NSC3 server = $IOTCONNECTIONSTATUS"
+            echo "Streaming status to NSC3 server = $IOTSTEAMINGSTATUS"
+        fi
     fi
 }
 # Function for list
