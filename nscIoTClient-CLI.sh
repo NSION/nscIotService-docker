@@ -49,9 +49,11 @@ function status() {
     export IOTSTEAMINGSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/status/streaming | jq -r '.liveStreaming')
     export IOTKEYSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/connection/access-configuration-status | jq -r '.accessConfigurationStatus')
     if [ -z "$IOTKEYSTATUS" ]
+        then
         echo "nscIoT Service is down. Please try to restart by docker-compose up -d"
         else 
         if [ $IOTKEYSTATUS != "SUCCESS" ]
+            then
             echo "Please add iotkey by 'nscIoTClient-CLI.sh iotkey' command"
             else
             echo "Connection status to NSC3 server = $IOTCONNECTIONSTATUS"
