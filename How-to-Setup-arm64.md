@@ -137,6 +137,117 @@ TIMESTAMP=$(date +%Y%m%d%H%M)
 SUDO=false  # If docker requires sudo grants then set this env. variable to true
 ...
 ```
+#### Getting started with (nscIoTClient-CLI.sh)
+
+##### Initialization:
+
+Pair the nscIotService with NSC3 backend by iotkey
+
+```text
+cd ~/nscIotService-docker
+./nscIoTClient-CLI.sh iotkey -location <location and filename of iotkeyfile>
+```
+
+Expected result:
+
+```text
+The iot-key found from '<path>'
+[+] Running 1/1
+ ⠿ Container nsciotservice-docker-nsciotservice-1  Started                                                                                                               1.0s
+Connection status with new iotkey = SUCCESS
+```
+
+##### Check status:
+
+Check connectivity status to NSC3 backend
+
+```text
+cd ~/nscIotService-docker
+./nscIoTClient-CLI.sh status
+```
+
+Expected result:
+
+```text
+Connection status to NSC3 server = connected
+Streaming status to NSC3 server = inactive
+```
+
+##### add networkCams:
+
+Add new IP cam and start streaming
+
+```text
+cd ~/nscIotService-docker
+./nscIoTClient-CLI.sh add -name mycam -url http://123.123.123.123/mjpg/video.mjpg -u '' -p ''
+```
+
+Expected result:
+
+```text
+Added network source from http://123.123.123.123/mjpg/video.mjpg with id fa0f7d57-f511-4424-a7f3-0aa3876c52d0
+Starting new camera...
+Source found and attempt stream start.
+```
+
+Validate broadcasting status:
+
+```text
+./nscIoTClient-CLI.sh list
+```
+
+Expected result:
+
+```text
+name,streamSourceId,type,address,autostart,broadcastStatus
+"mycam","fa0f7d57-f511-4424-a7f3-0aa3876c52d0","NETWORKCAMERA","http://123.123.123.123/mjpg/video.mjpg",true,"BROADCASTING"
+```
+
+##### control networkCams:
+
+Stop streaming:
+
+```text
+cd ~/nscIotService-docker
+./nscIoTClient-CLI.sh control -sourceID fa0f7d57-f511-4424-a7f3-0aa3876c52d0 stop
+```
+
+Expected result:
+
+```text
+Executing control command with arguments: '-sourceID fa0f7d57-f511-4424-a7f3-0aa3876c52d0 stop'
+control syntax ok: fa0f7d57-f511-4424-a7f3-0aa3876c52d0 stop
+Issued a stop command for stream fa0f7d57-f511-4424-a7f3-0aa3876c52d0
+```
+
+Start streaming:
+
+```text
+cd ~/nscIotService-docker
+./nscIoTClient-CLI.sh control -sourceID fa0f7d57-f511-4424-a7f3-0aa3876c52d0 start
+```
+
+Expected result:
+
+```text
+Executing control command with arguments: '-sourceID fa0f7d57-f511-4424-a7f3-0aa3876c52d0 start'
+control syntax ok: fa0f7d57-f511-4424-a7f3-0aa3876c52d0 start
+Source found and attempt stream start.
+```
+
+Validate broadcasting status:
+
+```text
+./nscIoTClient-CLI.sh list
+```
+
+Expected result:
+
+```text
+name,streamSourceId,type,address,autostart,broadcastStatus
+"mycam","fa0f7d57-f511-4424-a7f3-0aa3876c52d0","NETWORKCAMERA","http://123.123.123.123/mjpg/video.mjpg",true,"BROADCASTING"
+```
+
 
 ## Basic operations:
 ### Shutdown nscIotService:
