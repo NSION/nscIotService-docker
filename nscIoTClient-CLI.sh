@@ -104,7 +104,12 @@ function iotkey() {
         if test "$SUDO" = true; then sudo docker-compose restart; else docker-compose restart; fi
         sleep 10
         IOTKEYSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/connection/access-configuration-status | jq -r '.accessConfigurationStatus')
-        echo "Connection status with new iotkey = $IOTKEYSTATUS"
+        if [ -z "$IOTKEYSTATUS" ]
+            then
+            echo "nscIoT Service is down. Please try to restart by 'docker-compose up -d'"
+            else
+            echo "Connection status with new iotkey = $IOTKEYSTATUS"
+        fi
         else
         echo "The iot-key cannot been found from '$IOTKEY'"
     fi
