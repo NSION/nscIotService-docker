@@ -52,7 +52,7 @@ version: '2.4'
 services:
   nsciotservice:
     network_mode: bridge
-    image: 'nsiontech/nsciotservice:quarkus-arm64'
+    image: 'nsiontech/nsciotservice:arm64-release-4.0'
     command: ''
     entrypoint: /deployments/run-java.sh
     working_dir: ''
