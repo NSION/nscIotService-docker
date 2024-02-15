@@ -100,7 +100,7 @@ function iotkey() {
     if  [ $1 == "-location" ]; then IOTKEY=$2; else invalid $@; exit 1; fi
     if [ -f "$IOTKEY" ]; then 
         echo "The iot-key found from '$IOTKEY'"
-        cp $IOTKEY ./iotconfig/. 2> /dev/null 
+        cp $IOTKEY ./iotconfig/legacy/. 2> /dev/null 
         if test "$SUDO" = true; then sudo docker-compose restart; else docker-compose restart; fi
         sleep 10
         IOTKEYSTATUS=$(curl -s http://$IOTHOSTNAME:$IOTPORT/connection/access-configuration-status | jq -r '.accessConfigurationStatus')
