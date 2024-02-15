@@ -46,6 +46,10 @@ git clone https://github.com/NSION/nscIotService-docker.git
 cd ~/nscIotService-docker
 chmod u+x *.sh
 mkdir iotconfig
+mkdir ./iotconfig/legacy
+mkdir ./iotconfig/statedb
+mkdir ./iotconfig/imagedb
+sudo chmod 777 -R iotconfig 
 touch ./iotconfig/nscIoTConf.env
 ln -s docker-compose-arm64.yml docker-compose.yml
 sudo docker-compose up -d
