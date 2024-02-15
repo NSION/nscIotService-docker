@@ -18,11 +18,15 @@ services:
     ports:
       - '8090:8090'
     volumes:
-      - 'nsciot-volume:/deployments/statedb'
-      - '$PWD/iotconfig:/deployments/legacy'
-volumes:
-  nsciot-volume:
-    driver: local
+      -   type: bind
+          source: ./iotconfig/legacy
+          target: /deployments/legacy
+      -   type: bind
+          source: ./iotconfig/statedb
+          target: /deployments/statedb
+      -   type: bind
+          source: ./iotconfig/imagedb
+          target: /deployments/imagedb
 networks:
     nsciot-network:
       driver: bridge
