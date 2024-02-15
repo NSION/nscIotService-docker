@@ -7,7 +7,7 @@ services:
     image: 'nsiontech/nsciotservice:arm64-release-4.0'
     command: ''
     env_file:
-        - $PWD/iotconfig/nscIoTConf.env
+        - ./iotconfig/nscIoTConf.env
     entrypoint: /deployments/run-java.sh
     restart: unless-stopped
     working_dir: ''
