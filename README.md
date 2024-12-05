@@ -1,6 +1,6 @@
 # nscIotService-docker
 
-This is a microservice based SW deployment specific repository for a NSC IoT client developed by NSION technologies Ltd.
+This is a microservice based SW deployment specific repository for a NSC IoT client developed by Modirum.
 - Instructions and scripts to setup container based nscIotService on edge computer node. Support for serveral RTSP based IP camera sources.
 
 **Prerequisites for installation:**
